@@ -1,0 +1,36 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  firebase-emulator:
+    image: rambabusaravanan/firebase:latest # 使用 Firebase 官方模拟器镜像
+    ports:
+      - "8080:8080" # Firestore 默认端口
+      - "9099:9099" # Authentication 默认端口
+      - "4000:4000" # Emulator UI 默认端口
+    volumes:
+      # 挂载一个本地目录用于存储模拟器数据，以便数据持久化
+      # 请确保 'firebase-data' 目录在您的 docker-compose.yml 文件所在目录下存在
+      - ./firebase-data:/firebase/data
+      # 您可以将 firebase.json 和 firestore.rules 挂载到这里
+      # - ./firebase.json:/firebase.json
+      # - ./firestore.rules:/firestore.rules
+    environment:
+      # 设置环境变量以确保模拟器正确启动
+       FIREBASE_DEBUG: "true" # 开启调试日志
+      # FIREBASE_PROJECT_ID: "your-local-project-id" # 可以设置一个虚拟的项目ID
+    command: ["firebase", "emulators:start", "--only", "firestore,auth", "--project", "your-local-project-id"]
+    # 如果您需要更详细的日志，可以添加 --debug 标志
+    # command: ["firebase", "emulators:start", "--only", "firestore,auth", "--project", "your-local-project-id", "--debug"]
+    networks:
+      - firebase-network
+
+networks:
+  firebase-network:
+    driver: bridge
+
+# 卷定义 (可选，但推荐用于持久化数据)
+volumes:
+  firebase-data:
+    driver: local
+

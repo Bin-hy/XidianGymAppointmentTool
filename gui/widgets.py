@@ -1,5 +1,3 @@
-# gui/widgets.py
-
 import webbrowser
 import os
 
@@ -17,6 +15,7 @@ from config.credentials_config import credentials_manager  # 用于用户状态�
 from gui.threads import GetUserInfoThread
 from tools.gui_logger import LogViewer, setup_gui_logger  # 导入日志查看器和设置函数
 from API.User.API import GetUserInfo  # 导入用户信息获取函数
+
 
 # --- 日志组件 (集成日志查看器) ---
 class LogWidget(QWidget):
@@ -82,6 +81,7 @@ class UserStatusWidget(QWidget):
         super().__init__(parent)
         self.已登录 = False
         self.网络管理器 = QNetworkAccessManager(self)  # 用于头像下载
+        self.获取用户信息线程 = None  # 初始化线程引用
         self.initUI()
         self._加载初始用户状态()  # 初始化时加载状态
 
@@ -121,9 +121,10 @@ class UserStatusWidget(QWidget):
 
     def _加载初始用户状态(self):
         """根据凭证加载初始用户状态。"""
+        # 初始状态不再尝试获取用户信息，等待 Firebase 认证信号
         if credentials_manager.get_cookies():
             self.set_logged_in_state(True)
-            self._获取并显示用户信息()
+            # self._获取并显示用户信息() # 移除此处的直接调用
         else:
             self.set_logged_in_state(False)
 
@@ -132,25 +133,45 @@ class UserStatusWidget(QWidget):
         self.已登录 = is_logged_in
         if is_logged_in:
             self.登录注销按钮.setText("注销")
-            # 用户名和头像在 _获取并显示用户信息 中更新
-            self.用户名标签.setText("用户名: 加载中...")
+            # 用户名和头像在 _获取并显示用户信息 或 set_user_id 中更新
+            self.用户名标签.setText("用户名: 加载中...")  # 初始设置为加载中
         else:
             self.登录注销按钮.setText("登录")
             self.用户名标签.setText("用户名: 未登录")
             self.用户头像标签.clear()  # 清空头像
 
+    def set_user_id(self, user_id: str):
+        """
+        设置并显示用户ID，并根据ID是否存在决定是否获取用户详细信息。
+        这个方法将连接到 firebase_manager.auth_state_changed 信号。
+        """
+        logger.debug(f"用户状态组件: set_user_id 被调用，user_id: {user_id}")
+        if user_id:
+            logger.info(f"用户状态组件: 接收到用户ID: {user_id}。正在获取用户详细信息。")
+            self.set_logged_in_state(True)  # 标记为已登录
+            self._获取并显示用户信息()  # 获取并显示详细用户信息
+        else:
+            logger.info("用户状态组件: 接收到空用户ID。标记为未登录。")
+            self.set_logged_in_state(False)  # 标记为未登录
+
     def _获取并显示用户信息(self):
         """获取用户信息并更新 UI。"""
         logger.info("用户状态组件: 正在尝试获取用户信息...")
+        # 避免重复启动线程
+        if self.获取用户信息线程 and self.获取用户信息线程.isRunning():
+            logger.warning("用户状态组件: 获取用户信息线程已在运行中，跳过重复启动。")
+            return
+
         # 使用线程获取用户信息，避免阻塞 UI
         self.获取用户信息线程 = GetUserInfoThread()
         self.获取用户信息线程.user_info_fetched.connect(self._用户信息获取成功)
         self.获取用户信息线程.error_occurred.connect(self._用户信息获取失败)
         self.获取用户信息线程.start()
+        logger.debug("用户状态组件: 获取用户信息线程已启动。")
 
     def _用户信息获取成功(self, response_data: dict):
         """处理用户信息获取成功后的数据。"""
-        logger.info("用户状态组件: 用户信息获取成功。")
+        logger.info("用户状态组件: 用户信息获取成功信号接收。")
         用户信息 = response_data.get("data")
         if 用户信息:
             用户名 = 用户信息.get("UserName", "未知用户")
@@ -165,15 +186,28 @@ class UserStatusWidget(QWidget):
                 self.用户头像标签.setText("无头像")
                 logger.warning("用户状态组件: 未获取到用户头像 URL。")
         else:
-            self.用户名标签.setText("用户名: 获取失败")
+            self.用户名标签.setText("用户名: 获取失败 (数据为空)")
             self.用户头像标签.setText("头像获取失败")
-            logger.warning("用户状态组件: 获取用户信息失败或返回数据为空。")
+            logger.warning("用户状态组件: 获取用户信息成功，但返回数据为空或格式不正确。")
+
+        # 确保线程引用被清除，防止内存泄漏
+        if self.获取用户信息线程:
+            self.获取用户信息线程.quit()
+            self.获取用户信息线程.wait()
+            self.获取用户信息线程 = None
 
     def _用户信息获取失败(self, error_message: str):
         """处理用户信息获取失败。"""
-        self.用户名标签.setText("用户名: 错误")
-        self.用户头像标签.setText("头像错误")
+        logger.error(f"用户状态组件: 用户信息获取失败信号接收：{error_message}")
+        self.用户名标签.setText("用户名: 获取失败")
+        self.用户头像标签.setText("头像获取失败")
         logger.error(f"用户状态组件: 获取用户信息时发生错误: {error_message}")
+
+        # 确保线程引用被清除，防止内存泄漏
+        if self.获取用户信息线程:
+            self.获取用户信息线程.quit()
+            self.获取用户信息线程.wait()
+            self.获取用户信息线程 = None
 
     def _加载并显示头像(self, url: str):
         """异步加载并显示头像图片。"""
@@ -204,8 +238,8 @@ class UserStatusWidget(QWidget):
                 画家.end()
 
                 缩放像素图 = 圆形像素图.scaled(self.用户头像标签.size(),
-                                                      Qt.AspectRatioMode.KeepAspectRatio,
-                                                      Qt.TransformationMode.SmoothTransformation)
+                                               Qt.AspectRatioMode.KeepAspectRatio,
+                                               Qt.TransformationMode.SmoothTransformation)
                 self.用户头像标签.setPixmap(缩放像素图)
                 logger.info("用户状态组件: 头像加载成功。")
             else:
@@ -333,6 +367,3 @@ class SportSelectionWidget(QWidget):
         """启用或禁用运动导航项。"""
         for button in self.运动按钮.values():
             button.setEnabled(enable)
-
-# 注意：原始 Bilibili 项目的 widgets.py 还包含 SettingsWidget, AboutWidget, ModelConfigWidget。
-# 这些是其应用程序特定功能，为避免混淆此处未包含。
