@@ -1,0 +1,288 @@
+2025-07-09 19:37:16.835 | INFO     | gui.login:start_login_process:200 - 登录线程已启动。
+2025-07-09 19:37:16.836 | INFO     | gui.login:run:45 - 正在启动浏览器...
+2025-07-09 19:37:24.372 | INFO     | gui.login:run:59 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-09 19:37:24.372 | INFO     | gui.login:run:65 - 等待跳转到验证页面 (B页面)...
+2025-07-09 19:37:34.178 | ERROR    | gui.login:run:112 - 发生未知错误：'NoneType' object has no attribute 'startswith'
+2025-07-09 19:37:34.185 | ERROR    | gui.login:on_login_failed:219 - 登录失败信号接收：发生未知错误：'NoneType' object has no attribute 'startswith'
+2025-07-13 20:25:04.100 | INFO     | gui.login:start_login_process:200 - 登录线程已启动。
+2025-07-13 20:25:04.100 | INFO     | gui.login:run:45 - 正在启动浏览器...
+2025-07-13 20:25:10.452 | ERROR    | gui.login:run:106 - WebDriver错误：Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6244e6f75+76917]
+	GetHandleVerifier [0x0x7ff6244e6fd0+77008]
+	(No symbol) [0x0x7ff624299dea]
+	(No symbol) [0x0x7ff6242d8489]
+	(No symbol) [0x0x7ff6242d2675]
+	(No symbol) [0x0x7ff624325e9e]
+	(No symbol) [0x0x7ff624325630]
+	(No symbol) [0x0x7ff624318243]
+	(No symbol) [0x0x7ff6242e1431]
+	(No symbol) [0x0x7ff6242e21c3]
+	GetHandleVerifier [0x0x7ff6247bd2ad+3051437]
+	GetHandleVerifier [0x0x7ff6247b7903+3028483]
+	GetHandleVerifier [0x0x7ff6247d589d+3151261]
+	GetHandleVerifier [0x0x7ff62450183e+185662]
+	GetHandleVerifier [0x0x7ff6245096ff+218111]
+	GetHandleVerifier [0x0x7ff6244efaf4+112628]
+	GetHandleVerifier [0x0x7ff6244efca9+113065]
+	GetHandleVerifier [0x0x7ff6244d6c78+10616]
+	BaseThreadInitThunk [0x0x7ffa30027374+20]
+	RtlUserThreadStart [0x0x7ffa31b3cc91+33]
+
+2025-07-13 20:25:10.454 | ERROR    | gui.login:on_login_failed:219 - 登录失败信号接收：WebDriver错误：请确保浏览器驱动已正确安装并可在PATH中找到，或指定正确的路径。错误信息：Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6244e6f75+76917]
+	GetHandleVerifier [0x0x7ff6244e6fd0+77008]
+	(No symbol) [0x0x7ff624299dea]
+	(No symbol) [0x0x7ff6242d8489]
+	(No symbol) [0x0x7ff6242d2675]
+	(No symbol) [0x0x7ff624325e9e]
+	(No symbol) [0x0x7ff624325630]
+	(No symbol) [0x0x7ff624318243]
+	(No symbol) [0x0x7ff6242e1431]
+	(No symbol) [0x0x7ff6242e21c3]
+	GetHandleVerifier [0x0x7ff6247bd2ad+3051437]
+	GetHandleVerifier [0x0x7ff6247b7903+3028483]
+	GetHandleVerifier [0x0x7ff6247d589d+3151261]
+	GetHandleVerifier [0x0x7ff62450183e+185662]
+	GetHandleVerifier [0x0x7ff6245096ff+218111]
+	GetHandleVerifier [0x0x7ff6244efaf4+112628]
+	GetHandleVerifier [0x0x7ff6244efca9+113065]
+	GetHandleVerifier [0x0x7ff6244d6c78+10616]
+	BaseThreadInitThunk [0x0x7ffa30027374+20]
+	RtlUserThreadStart [0x0x7ffa31b3cc91+33]
+
+2025-07-13 20:25:33.392 | INFO     | gui.login:start_login_process:200 - 登录线程已启动。
+2025-07-13 20:25:33.392 | INFO     | gui.login:run:45 - 正在启动浏览器...
+2025-07-13 20:25:35.710 | INFO     | gui.login:run:59 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-13 20:25:35.711 | INFO     | gui.login:run:65 - 等待跳转到验证页面 (B页面)...
+2025-07-13 20:25:43.143 | INFO     | gui.login:run:71 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-13 20:25:43.144 | INFO     | gui.login:run:83 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-13 20:25:58.349 | INFO     | gui.login:run:91 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-13 20:25:58.350 | INFO     | gui.login:run:96 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-13 20:26:00.486 | INFO     | gui.login:_get_credentials_from_driver:134 - 获取到 8 条Cookie。
+2025-07-13 20:26:00.492 | INFO     | gui.login:_get_credentials_from_driver:142 - 获取到 Local Storage 数据。
+2025-07-13 20:26:00.501 | INFO     | gui.login:_get_credentials_from_driver:152 - 获取到 Session Storage 数据。
+2025-07-13 20:26:00.505 | INFO     | gui.login:on_login_success:206 - 登录成功信号接收。
+2025-07-13 20:26:02.786 | INFO     | gui.login:run:117 - 浏览器已关闭。
+2025-07-13 20:26:03.020 | INFO     | gui.login:_save_credentials:242 - 凭证已保存到: C:\Users\SXH\Desktop\A-Project\XidianGymAppointmentTool\gui\config\credentials.json
+2025-07-13 22:18:05.768 | INFO     | gui.login:start_login_process:201 - 登录线程已启动。
+2025-07-13 22:18:05.768 | INFO     | gui.login:run:46 - 正在启动浏览器...
+2025-07-13 22:18:11.251 | INFO     | gui.login:run:60 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-13 22:18:11.252 | INFO     | gui.login:run:66 - 等待跳转到验证页面 (B页面)...
+2025-07-13 22:18:16.450 | INFO     | gui.login:run:72 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-13 22:18:16.450 | INFO     | gui.login:run:84 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-13 22:18:38.294 | INFO     | gui.login:run:92 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-13 22:18:38.294 | INFO     | gui.login:run:97 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-13 22:18:40.944 | INFO     | gui.login:_get_credentials_from_driver:135 - 获取到 8 条Cookie。
+2025-07-13 22:18:40.947 | INFO     | gui.login:_get_credentials_from_driver:143 - 获取到 Local Storage 数据。
+2025-07-13 22:18:40.951 | INFO     | gui.login:_get_credentials_from_driver:153 - 获取到 Session Storage 数据。
+2025-07-13 22:18:40.954 | INFO     | gui.login:on_login_success:207 - 登录成功信号接收。
+2025-07-13 22:18:43.142 | INFO     | gui.login:run:118 - 浏览器已关闭。
+2025-07-13 22:20:09.354 | INFO     | gui.login:start_login_process:201 - 登录线程已启动。
+2025-07-13 22:20:09.355 | INFO     | gui.login:run:46 - 正在启动浏览器...
+2025-07-13 22:20:11.306 | INFO     | gui.login:run:60 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-13 22:20:11.307 | INFO     | gui.login:run:66 - 等待跳转到验证页面 (B页面)...
+2025-07-13 22:20:16.403 | INFO     | gui.login:run:72 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-13 22:20:16.403 | INFO     | gui.login:run:84 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-13 22:20:29.392 | INFO     | gui.login:run:92 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-13 22:20:29.393 | INFO     | gui.login:run:97 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-13 22:20:31.537 | INFO     | gui.login:_get_credentials_from_driver:135 - 获取到 8 条Cookie。
+2025-07-13 22:20:31.539 | INFO     | gui.login:_get_credentials_from_driver:143 - 获取到 Local Storage 数据。
+2025-07-13 22:20:31.542 | INFO     | gui.login:_get_credentials_from_driver:153 - 获取到 Session Storage 数据。
+2025-07-13 22:20:31.543 | INFO     | gui.login:on_login_success:207 - 登录成功信号接收。
+2025-07-13 22:20:33.666 | INFO     | gui.login:run:118 - 浏览器已关闭。
+2025-07-13 22:31:27.084 | INFO     | gui.login:start_login_process:203 - Login thread started.
+2025-07-13 22:31:27.085 | INFO     | gui.login:run:44 - Starting browser...
+2025-07-13 22:31:29.275 | INFO     | gui.login:run:60 - Opened login entry page (Page A): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-13 22:31:29.275 | INFO     | gui.login:run:66 - Waiting for redirection to verification page (Page B)...
+2025-07-13 22:31:33.891 | INFO     | gui.login:run:72 - Redirected to verification page: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-13 22:31:33.892 | INFO     | gui.login:run:84 - Please complete the login operation in the popped-up browser window...
+2025-07-13 22:31:52.969 | INFO     | gui.login:run:94 - Returned from verification page to main business domain (Page A): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-13 22:31:52.969 | INFO     | gui.login:run:99 - User likely logged in and returned to main business domain, attempting to get credentials...
+2025-07-13 22:31:55.569 | INFO     | gui.login:_get_credentials_from_driver:137 - Retrieved 8 cookies.
+2025-07-13 22:31:55.572 | INFO     | gui.login:_get_credentials_from_driver:145 - Retrieved Local Storage data.
+2025-07-13 22:31:55.574 | INFO     | gui.login:_get_credentials_from_driver:155 - Retrieved Session Storage data.
+2025-07-13 22:31:55.575 | INFO     | gui.login:on_login_success:209 - Login success signal received.
+2025-07-13 22:31:57.701 | INFO     | gui.login:run:120 - Browser closed.
+2025-07-13 22:33:31.711 | INFO     | gui.login:start_login_process:202 - 登录线程已启动。
+2025-07-13 22:33:31.712 | INFO     | gui.login:run:44 - 正在启动浏览器...
+2025-07-13 22:33:33.939 | INFO     | gui.login:run:60 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-13 22:33:33.939 | INFO     | gui.login:run:66 - 等待跳转到验证页面 (B页面)...
+2025-07-13 22:33:39.017 | INFO     | gui.login:run:72 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-13 22:33:39.017 | INFO     | gui.login:run:84 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-13 22:33:50.532 | INFO     | gui.login:run:93 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-13 22:33:50.532 | INFO     | gui.login:run:98 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-13 22:33:53.156 | INFO     | gui.login:_get_credentials_from_driver:136 - 获取到 8 条Cookie。
+2025-07-13 22:33:53.159 | INFO     | gui.login:_get_credentials_from_driver:144 - 获取到 Local Storage 数据。
+2025-07-13 22:33:53.162 | INFO     | gui.login:_get_credentials_from_driver:154 - 获取到 Session Storage 数据。
+2025-07-13 22:33:53.165 | INFO     | gui.login:on_login_success:208 - 登录成功信号接收。
+2025-07-13 22:33:55.322 | INFO     | gui.login:run:119 - 浏览器已关闭。
+2025-07-13 22:36:34.332 | INFO     | gui.login:start_login_process:202 - 登录线程已启动。
+2025-07-13 22:36:34.333 | INFO     | gui.login:run:44 - 正在启动浏览器...
+2025-07-13 22:36:36.440 | INFO     | gui.login:run:60 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-13 22:36:36.441 | INFO     | gui.login:run:66 - 等待跳转到验证页面 (B页面)...
+2025-07-13 22:36:40.833 | INFO     | gui.login:run:72 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-13 22:36:40.833 | INFO     | gui.login:run:84 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-13 22:36:52.831 | INFO     | gui.login:run:93 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-13 22:36:52.831 | INFO     | gui.login:run:98 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-13 22:36:54.948 | INFO     | gui.login:_get_credentials_from_driver:136 - 获取到 8 条Cookie。
+2025-07-13 22:36:54.951 | INFO     | gui.login:_get_credentials_from_driver:144 - 获取到 Local Storage 数据。
+2025-07-13 22:36:54.954 | INFO     | gui.login:_get_credentials_from_driver:154 - 获取到 Session Storage 数据。
+2025-07-13 22:36:54.957 | INFO     | gui.login:on_login_success:208 - 登录成功信号接收。
+2025-07-13 22:36:57.125 | INFO     | gui.login:run:119 - 浏览器已关闭。
+2025-07-13 23:54:47.180 | INFO     | gui.login:start_login_process:207 - 登录线程已启动。
+2025-07-13 23:54:47.181 | INFO     | gui.login:run:49 - 正在启动浏览器...
+2025-07-13 23:55:25.808 | ERROR    | gui.login:run:113 - WebDriver错误：Message: unknown error: net::ERR_CONNECTION_CLOSED
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6f5b86f75+76917]
+	GetHandleVerifier [0x0x7ff6f5b86fd0+77008]
+	(No symbol) [0x0x7ff6f5939dea]
+	(No symbol) [0x0x7ff6f5936ba5]
+	(No symbol) [0x0x7ff6f5927879]
+	(No symbol) [0x0x7ff6f5929631]
+	(No symbol) [0x0x7ff6f5927b96]
+	(No symbol) [0x0x7ff6f59275f6]
+	(No symbol) [0x0x7ff6f59272ba]
+	(No symbol) [0x0x7ff6f5924e8b]
+	(No symbol) [0x0x7ff6f592570c]
+	(No symbol) [0x0x7ff6f593dd9a]
+	(No symbol) [0x0x7ff6f59e143e]
+	(No symbol) [0x0x7ff6f59b846a]
+	(No symbol) [0x0x7ff6f59e065c]
+	(No symbol) [0x0x7ff6f59b8243]
+	(No symbol) [0x0x7ff6f5981431]
+	(No symbol) [0x0x7ff6f59821c3]
+	GetHandleVerifier [0x0x7ff6f5e5d2ad+3051437]
+	GetHandleVerifier [0x0x7ff6f5e57903+3028483]
+	GetHandleVerifier [0x0x7ff6f5e7589d+3151261]
+	GetHandleVerifier [0x0x7ff6f5ba183e+185662]
+	GetHandleVerifier [0x0x7ff6f5ba96ff+218111]
+	GetHandleVerifier [0x0x7ff6f5b8faf4+112628]
+	GetHandleVerifier [0x0x7ff6f5b8fca9+113065]
+	GetHandleVerifier [0x0x7ff6f5b76c78+10616]
+	BaseThreadInitThunk [0x0x7ffa30027374+20]
+	RtlUserThreadStart [0x0x7ffa31b3cc91+33]
+
+2025-07-13 23:55:25.808 | ERROR    | gui.login:on_login_failed:229 - 登录失败信号接收：WebDriver错误：请确保浏览器驱动已正确安装并可在PATH中找到，或指定正确的路径。错误信息：Message: unknown error: net::ERR_CONNECTION_CLOSED
+  (Session info: chrome=138.0.7204.101)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff6f5b86f75+76917]
+	GetHandleVerifier [0x0x7ff6f5b86fd0+77008]
+	(No symbol) [0x0x7ff6f5939dea]
+	(No symbol) [0x0x7ff6f5936ba5]
+	(No symbol) [0x0x7ff6f5927879]
+	(No symbol) [0x0x7ff6f5929631]
+	(No symbol) [0x0x7ff6f5927b96]
+	(No symbol) [0x0x7ff6f59275f6]
+	(No symbol) [0x0x7ff6f59272ba]
+	(No symbol) [0x0x7ff6f5924e8b]
+	(No symbol) [0x0x7ff6f592570c]
+	(No symbol) [0x0x7ff6f593dd9a]
+	(No symbol) [0x0x7ff6f59e143e]
+	(No symbol) [0x0x7ff6f59b846a]
+	(No symbol) [0x0x7ff6f59e065c]
+	(No symbol) [0x0x7ff6f59b8243]
+	(No symbol) [0x0x7ff6f5981431]
+	(No symbol) [0x0x7ff6f59821c3]
+	GetHandleVerifier [0x0x7ff6f5e5d2ad+3051437]
+	GetHandleVerifier [0x0x7ff6f5e57903+3028483]
+	GetHandleVerifier [0x0x7ff6f5e7589d+3151261]
+	GetHandleVerifier [0x0x7ff6f5ba183e+185662]
+	GetHandleVerifier [0x0x7ff6f5ba96ff+218111]
+	GetHandleVerifier [0x0x7ff6f5b8faf4+112628]
+	GetHandleVerifier [0x0x7ff6f5b8fca9+113065]
+	GetHandleVerifier [0x0x7ff6f5b76c78+10616]
+	BaseThreadInitThunk [0x0x7ffa30027374+20]
+	RtlUserThreadStart [0x0x7ffa31b3cc91+33]
+
+2025-07-13 23:55:27.956 | INFO     | gui.login:run:124 - 浏览器已关闭。
+2025-07-13 23:56:11.588 | INFO     | gui.login:start_login_process:207 - 登录线程已启动。
+2025-07-13 23:56:11.589 | INFO     | gui.login:run:49 - 正在启动浏览器...
+2025-07-13 23:56:33.163 | INFO     | gui.login:start_login_process:207 - 登录线程已启动。
+2025-07-13 23:56:33.164 | INFO     | gui.login:run:49 - 正在启动浏览器...
+2025-07-13 23:56:35.405 | INFO     | gui.login:run:65 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-13 23:56:35.405 | INFO     | gui.login:run:71 - 等待跳转到验证页面 (B页面)...
+2025-07-13 23:56:54.534 | INFO     | gui.login:run:77 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-13 23:56:54.535 | INFO     | gui.login:run:89 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-13 23:57:13.910 | INFO     | gui.login:run:98 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-13 23:57:13.910 | INFO     | gui.login:run:103 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-13 23:57:16.168 | INFO     | gui.login:_get_credentials_from_driver:141 - 获取到 8 条Cookie。
+2025-07-13 23:57:16.172 | INFO     | gui.login:_get_credentials_from_driver:149 - 获取到 Local Storage 数据。
+2025-07-13 23:57:16.175 | INFO     | gui.login:_get_credentials_from_driver:159 - 获取到 Session Storage 数据。
+2025-07-13 23:57:16.178 | INFO     | gui.login:on_login_success:213 - 登录成功信号接收。
+2025-07-13 23:57:18.285 | INFO     | gui.login:run:124 - 浏览器已关闭。
+2025-07-13 23:57:20.357 | INFO     | gui.login:_fetch_and_display_user_info:239 - 尝试获取用户信息...
+2025-07-13 23:59:01.227 | INFO     | gui.login:start_login_process:223 - 登录线程已启动。
+2025-07-13 23:59:01.228 | INFO     | gui.login:run:49 - 正在启动浏览器...
+2025-07-13 23:59:03.748 | INFO     | gui.login:run:65 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-13 23:59:03.748 | INFO     | gui.login:run:71 - 等待跳转到验证页面 (B页面)...
+2025-07-13 23:59:12.091 | INFO     | gui.login:run:77 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-13 23:59:12.092 | INFO     | gui.login:run:89 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-13 23:59:24.622 | INFO     | gui.login:run:98 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-13 23:59:24.623 | INFO     | gui.login:run:103 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-13 23:59:26.794 | INFO     | gui.login:_get_credentials_from_driver:141 - 获取到 8 条Cookie。
+2025-07-13 23:59:26.797 | INFO     | gui.login:_get_credentials_from_driver:149 - 获取到 Local Storage 数据。
+2025-07-13 23:59:26.800 | INFO     | gui.login:_get_credentials_from_driver:159 - 获取到 Session Storage 数据。
+2025-07-13 23:59:26.801 | INFO     | gui.login:on_login_success:229 - 登录成功信号接收。
+2025-07-13 23:59:28.192 | INFO     | gui.login:_fetch_and_display_user_info:258 - 尝试获取用户信息...
+2025-07-13 23:59:28.682 | INFO     | gui.login:_fetch_and_display_user_info:267 - 获取到用户名: 侯岚翔
+2025-07-13 23:59:28.683 | INFO     | gui.login:_load_and_display_avatar:287 - 正在加载头像: https://wework.qpic.cn/wwpic3az/140326_JB7hsLjfQluboix_1722488622/0
+2025-07-13 23:59:28.965 | INFO     | gui.login:run:124 - 浏览器已关闭。
+2025-07-13 23:59:29.017 | INFO     | gui.login:_on_avatar_download_finished:305 - 头像加载成功。
+2025-07-14 00:08:19.982 | INFO     | gui.login:start_login_process:261 - 登录线程已启动。
+2025-07-14 00:08:19.983 | INFO     | gui.login:run:50 - 正在启动浏览器...
+2025-07-14 00:08:22.372 | INFO     | gui.login:run:66 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-14 00:08:22.372 | INFO     | gui.login:run:72 - 等待跳转到验证页面 (B页面)...
+2025-07-14 00:08:36.841 | INFO     | gui.login:run:78 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-14 00:08:36.844 | INFO     | gui.login:run:90 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-14 00:08:42.745 | INFO     | gui.login:run:99 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-14 00:08:42.745 | INFO     | gui.login:run:104 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-14 00:08:44.886 | INFO     | gui.login:_get_credentials_from_driver:142 - 获取到 8 条Cookie。
+2025-07-14 00:08:44.890 | INFO     | gui.login:_get_credentials_from_driver:150 - 获取到 Local Storage 数据。
+2025-07-14 00:08:44.892 | INFO     | gui.login:_get_credentials_from_driver:160 - 获取到 Session Storage 数据。
+2025-07-14 00:08:44.893 | INFO     | gui.login:on_login_success:267 - 登录成功信号接收。
+2025-07-14 00:08:46.451 | INFO     | gui.login:_fetch_and_display_user_info:296 - 尝试获取用户信息...
+2025-07-14 00:08:47.055 | INFO     | gui.login:run:125 - 浏览器已关闭。
+2025-07-14 00:08:47.179 | INFO     | gui.login:_fetch_and_display_user_info:305 - 获取到用户名: 侯岚翔
+2025-07-14 00:08:47.179 | INFO     | gui.login:_load_and_display_avatar:325 - 正在加载头像: https://wework.qpic.cn/wwpic3az/140326_JB7hsLjfQluboix_1722488622/0
+2025-07-14 00:08:47.478 | INFO     | gui.login:_on_avatar_download_finished:360 - 头像加载成功。
+2025-07-14 00:20:56.327 | INFO     | gui.login:_load_initial_user_status:387 - 尝试加载初始用户状态...
+2025-07-14 00:20:56.328 | INFO     | gui.login:_fetch_and_display_user_info:454 - 尝试获取用户信息...
+2025-07-14 00:20:56.955 | INFO     | gui.login:_fetch_and_display_user_info:463 - 获取到用户名: 侯岚翔
+2025-07-14 00:20:56.956 | INFO     | gui.login:_load_and_display_avatar:483 - 正在加载头像: https://wework.qpic.cn/wwpic3az/140326_JB7hsLjfQluboix_1722488622/0
+2025-07-14 00:20:57.333 | INFO     | gui.login:_on_avatar_download_finished:518 - 头像加载成功。
+2025-07-14 00:21:00.067 | INFO     | gui.login:_on_sport_selected:368 - 点击了 羽毛球 图标。
+2025-07-14 00:21:00.969 | INFO     | gui.login:_on_sport_selected:368 - 点击了 乒乓球 图标。
+2025-07-14 00:21:01.360 | INFO     | gui.login:_on_sport_selected:368 - 点击了 篮球 图标。
+2025-07-14 00:21:01.791 | INFO     | gui.login:_on_sport_selected:368 - 点击了 健身 图标。
+2025-07-14 00:21:32.610 | INFO     | gui.login:_on_sport_selected:368 - 点击了 羽毛球 图标。
+2025-07-14 00:21:33.095 | INFO     | gui.login:_on_sport_selected:368 - 点击了 乒乓球 图标。
+2025-07-14 00:21:33.421 | INFO     | gui.login:_on_sport_selected:368 - 点击了 篮球 图标。
+2025-07-14 00:21:33.714 | INFO     | gui.login:_on_sport_selected:368 - 点击了 健身 图标。
+2025-07-14 00:21:34.165 | INFO     | gui.login:start_login_process:420 - 登录线程已启动。
+2025-07-14 00:21:34.166 | INFO     | gui.login:run:51 - 正在启动浏览器...
+2025-07-14 00:21:37.727 | INFO     | gui.login:run:67 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-14 00:21:37.727 | INFO     | gui.login:run:73 - 等待跳转到验证页面 (B页面)...
+2025-07-14 00:21:46.241 | INFO     | gui.login:run:79 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-14 00:21:46.241 | INFO     | gui.login:run:92 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-14 00:22:04.632 | INFO     | gui.login:run:101 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-14 00:22:04.632 | INFO     | gui.login:run:106 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-14 00:22:06.751 | INFO     | gui.login:_get_credentials_from_driver:145 - 获取到 8 条Cookie。
+2025-07-14 00:22:06.753 | INFO     | gui.login:_get_credentials_from_driver:153 - 获取到 Local Storage 数据。
+2025-07-14 00:22:06.756 | INFO     | gui.login:_get_credentials_from_driver:163 - 获取到 Session Storage 数据。
+2025-07-14 00:22:06.757 | INFO     | gui.login:on_login_success:426 - 登录成功信号接收。
+2025-07-14 00:22:08.024 | INFO     | gui.login:_fetch_and_display_user_info:454 - 尝试获取用户信息...
+2025-07-14 00:22:08.351 | INFO     | gui.login:_fetch_and_display_user_info:463 - 获取到用户名: 侯岚翔
+2025-07-14 00:22:08.351 | INFO     | gui.login:_load_and_display_avatar:483 - 正在加载头像: https://wework.qpic.cn/wwpic3az/140326_JB7hsLjfQluboix_1722488622/0
+2025-07-14 00:22:08.490 | INFO     | gui.login:_on_avatar_download_finished:518 - 头像加载成功。
+2025-07-14 00:22:08.879 | INFO     | gui.login:run:128 - 浏览器已关闭。
+2025-07-14 00:22:09.593 | INFO     | gui.login:_on_sport_selected:368 - 点击了 羽毛球 图标。
+2025-07-14 00:22:10.361 | INFO     | gui.login:_on_sport_selected:368 - 点击了 乒乓球 图标。
+2025-07-14 00:22:10.920 | INFO     | gui.login:_on_sport_selected:368 - 点击了 篮球 图标。
+2025-07-14 00:22:11.217 | INFO     | gui.login:_on_sport_selected:368 - 点击了 健身 图标。
+2025-07-14 00:22:20.141 | INFO     | gui.login:_on_sport_selected:368 - 点击了 乒乓球 图标。
+2025-07-14 00:22:20.519 | INFO     | gui.login:_on_sport_selected:368 - 点击了 篮球 图标。
+2025-07-14 00:22:20.913 | INFO     | gui.login:_on_sport_selected:368 - 点击了 健身 图标。
+2025-07-14 00:22:21.527 | INFO     | gui.login:_on_sport_selected:368 - 点击了 羽毛球 图标。

@@ -1,0 +1,31 @@
+[
+  # 已被预定
+  {
+    "IsCardPay": null,
+    "MemberNo": null,
+    "Discount": null,
+    "ConType": null,
+    "type": 3,
+    "errorcode": 0,
+    "message": "场地冲突，您选择的20:00至21:00的YMQ001，该场地已被其他人使用，请请重新刷新页面选择场地！",
+    "resultdata": null
+  },
+  # 抢到了
+  {
+    "IsCardPay": null,
+    "MemberNo": null,
+    "Discount": null,
+    "ConType": null,
+    "type": 1,
+    "errorcode": 0,
+    "message": "",
+    "resultdata": "f095240c-8b79-4662-8016-c00452250464"
+  },
+  # 被别人抢了但是没付钱
+  {
+    "type": 3,
+    "errorcode": 0,
+    "message": "抱歉(T_T) 您手速不够快，场地【羽毛球1】已被其他同学抢跑",
+    "resultdata": null
+  }
+]

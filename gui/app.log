@@ -1,0 +1,191 @@
+2025-07-09 16:37:23.554 | INFO     | __main__:start_login_process:174 - 登录线程已启动。
+2025-07-09 16:37:23.555 | INFO     | __main__:run:36 - 正在启动浏览器...
+2025-07-09 16:37:33.478 | INFO     | __main__:run:52 - 已打开登录页面: https://ids.xidian.edu.cn/authserver/login
+2025-07-09 16:38:10.507 | INFO     | __main__:run:73 - 用户可能已登录，尝试获取凭证...
+2025-07-09 16:38:10.509 | INFO     | __main__:_get_credentials_from_driver:108 - 获取到 7 条Cookie。
+2025-07-09 16:38:10.511 | INFO     | __main__:_get_credentials_from_driver:116 - 获取到 Local Storage 数据。
+2025-07-09 16:38:10.514 | INFO     | __main__:_get_credentials_from_driver:126 - 获取到 Session Storage 数据。
+2025-07-09 16:38:10.517 | INFO     | __main__:on_login_success:180 - 登录成功信号接收。
+2025-07-09 16:38:12.599 | INFO     | __main__:run:91 - 浏览器已关闭。
+2025-07-09 16:38:17.501 | INFO     | __main__:_save_credentials:208 - 凭证已保存到 credentials.json 文件。
+2025-07-09 16:45:36.029 | INFO     | __main__:start_login_process:174 - 登录线程已启动。
+2025-07-09 16:45:36.029 | INFO     | __main__:run:36 - 正在启动浏览器...
+2025-07-09 16:45:38.486 | INFO     | __main__:run:52 - 已打开登录页面: https://ids.xidian.edu.cn/authserver/login
+2025-07-09 16:45:44.510 | ERROR    | __main__:run:80 - WebDriver错误：Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.51); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff747566f75+76917]
+	GetHandleVerifier [0x0x7ff747566fd0+77008]
+	(No symbol) [0x0x7ff747319dea]
+	(No symbol) [0x0x7ff747305f15]
+	(No symbol) [0x0x7ff74732abf4]
+	(No symbol) [0x0x7ff74739fa85]
+	(No symbol) [0x0x7ff7473bff72]
+	(No symbol) [0x0x7ff747398243]
+	(No symbol) [0x0x7ff747361431]
+	(No symbol) [0x0x7ff7473621c3]
+	GetHandleVerifier [0x0x7ff74783d2ad+3051437]
+	GetHandleVerifier [0x0x7ff747837903+3028483]
+	GetHandleVerifier [0x0x7ff74785589d+3151261]
+	GetHandleVerifier [0x0x7ff74758183e+185662]
+	GetHandleVerifier [0x0x7ff7475896ff+218111]
+	GetHandleVerifier [0x0x7ff74756faf4+112628]
+	GetHandleVerifier [0x0x7ff74756fca9+113065]
+	GetHandleVerifier [0x0x7ff747556c78+10616]
+	BaseThreadInitThunk [0x0x7ffa30027374+20]
+	RtlUserThreadStart [0x0x7ffa31b3cc91+33]
+
+2025-07-09 16:45:44.511 | ERROR    | __main__:on_login_failed:193 - 登录失败信号接收：WebDriver错误：请确保浏览器驱动已正确安装并可在PATH中找到，或指定正确的路径。错误信息：Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.51); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff747566f75+76917]
+	GetHandleVerifier [0x0x7ff747566fd0+77008]
+	(No symbol) [0x0x7ff747319dea]
+	(No symbol) [0x0x7ff747305f15]
+	(No symbol) [0x0x7ff74732abf4]
+	(No symbol) [0x0x7ff74739fa85]
+	(No symbol) [0x0x7ff7473bff72]
+	(No symbol) [0x0x7ff747398243]
+	(No symbol) [0x0x7ff747361431]
+	(No symbol) [0x0x7ff7473621c3]
+	GetHandleVerifier [0x0x7ff74783d2ad+3051437]
+	GetHandleVerifier [0x0x7ff747837903+3028483]
+	GetHandleVerifier [0x0x7ff74785589d+3151261]
+	GetHandleVerifier [0x0x7ff74758183e+185662]
+	GetHandleVerifier [0x0x7ff7475896ff+218111]
+	GetHandleVerifier [0x0x7ff74756faf4+112628]
+	GetHandleVerifier [0x0x7ff74756fca9+113065]
+	GetHandleVerifier [0x0x7ff747556c78+10616]
+	BaseThreadInitThunk [0x0x7ffa30027374+20]
+	RtlUserThreadStart [0x0x7ffa31b3cc91+33]
+
+2025-07-09 16:45:46.574 | INFO     | __main__:run:91 - 浏览器已关闭。
+2025-07-09 16:46:56.095 | INFO     | __main__:start_login_process:174 - 登录线程已启动。
+2025-07-09 16:46:56.095 | INFO     | __main__:run:36 - 正在启动浏览器...
+2025-07-09 16:47:01.582 | INFO     | __main__:run:52 - 已打开登录页面: https://ids.xidian.edu.cn/authserver/login
+2025-07-09 16:47:36.711 | INFO     | __main__:run:73 - 用户可能已登录，尝试获取凭证...
+2025-07-09 16:47:36.713 | INFO     | __main__:_get_credentials_from_driver:108 - 获取到 0 条Cookie。
+2025-07-09 16:47:36.717 | INFO     | __main__:_get_credentials_from_driver:116 - 获取到 Local Storage 数据。
+2025-07-09 16:47:36.720 | INFO     | __main__:_get_credentials_from_driver:126 - 获取到 Session Storage 数据。
+2025-07-09 16:47:36.720 | INFO     | __main__:on_login_success:180 - 登录成功信号接收。
+2025-07-09 16:47:38.806 | INFO     | __main__:run:91 - 浏览器已关闭。
+2025-07-09 16:47:42.223 | INFO     | __main__:_save_credentials:208 - 凭证已保存到 credentials.json 文件。
+2025-07-09 16:48:18.290 | INFO     | __main__:start_login_process:174 - 登录线程已启动。
+2025-07-09 16:48:18.291 | INFO     | __main__:run:36 - 正在启动浏览器...
+2025-07-09 16:48:19.886 | INFO     | __main__:run:52 - 已打开登录页面: https://gyytygyy.xidian.edu.cn/Views/User/UserChoose.html
+2025-07-09 16:48:24.160 | INFO     | __main__:run:73 - 用户可能已登录，尝试获取凭证...
+2025-07-09 16:48:24.164 | INFO     | __main__:_get_credentials_from_driver:108 - 获取到 3 条Cookie。
+2025-07-09 16:48:24.168 | INFO     | __main__:_get_credentials_from_driver:116 - 获取到 Local Storage 数据。
+2025-07-09 16:48:24.171 | INFO     | __main__:_get_credentials_from_driver:126 - 获取到 Session Storage 数据。
+2025-07-09 16:48:24.172 | INFO     | __main__:on_login_success:180 - 登录成功信号接收。
+2025-07-09 16:48:26.245 | INFO     | __main__:run:91 - 浏览器已关闭。
+2025-07-09 16:48:30.371 | INFO     | __main__:_save_credentials:208 - 凭证已保存到 credentials.json 文件。
+2025-07-09 16:57:45.518 | INFO     | __main__:start_login_process:174 - 登录线程已启动。
+2025-07-09 16:57:45.519 | INFO     | __main__:run:36 - 正在启动浏览器...
+2025-07-09 16:57:47.264 | INFO     | __main__:run:52 - 已打开登录页面: https://gyytygyy.xidian.edu.cn/Views/User/UserChoose.html
+2025-07-09 16:57:50.315 | INFO     | __main__:run:73 - 用户可能已登录，尝试获取凭证...
+2025-07-09 16:57:50.317 | INFO     | __main__:_get_credentials_from_driver:108 - 获取到 3 条Cookie。
+2025-07-09 16:57:50.319 | INFO     | __main__:_get_credentials_from_driver:116 - 获取到 Local Storage 数据。
+2025-07-09 16:57:50.321 | INFO     | __main__:_get_credentials_from_driver:126 - 获取到 Session Storage 数据。
+2025-07-09 16:57:50.322 | INFO     | __main__:on_login_success:180 - 登录成功信号接收。
+2025-07-09 16:57:52.390 | INFO     | __main__:run:91 - 浏览器已关闭。
+2025-07-09 16:57:54.879 | INFO     | __main__:_save_credentials:208 - 凭证已保存到 credentials.json 文件。
+2025-07-09 16:59:05.888 | INFO     | __main__:start_login_process:199 - 登录线程已启动。
+2025-07-09 16:59:05.889 | INFO     | __main__:run:44 - 正在启动浏览器...
+2025-07-09 16:59:07.554 | INFO     | __main__:run:58 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/UserChoose.html
+2025-07-09 16:59:07.554 | INFO     | __main__:run:64 - 等待跳转到验证页面 (B页面)...
+2025-07-09 16:59:10.763 | INFO     | __main__:run:70 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-09 16:59:10.764 | INFO     | __main__:run:82 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-09 16:59:37.782 | INFO     | __main__:run:90 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-09 16:59:37.782 | INFO     | __main__:run:95 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-09 16:59:39.804 | INFO     | __main__:_get_credentials_from_driver:133 - 获取到 8 条Cookie。
+2025-07-09 16:59:39.806 | INFO     | __main__:_get_credentials_from_driver:141 - 获取到 Local Storage 数据。
+2025-07-09 16:59:39.809 | INFO     | __main__:_get_credentials_from_driver:151 - 获取到 Session Storage 数据。
+2025-07-09 16:59:39.810 | INFO     | __main__:on_login_success:205 - 登录成功信号接收。
+2025-07-09 16:59:41.900 | INFO     | __main__:run:116 - 浏览器已关闭。
+2025-07-09 16:59:44.924 | INFO     | __main__:_save_credentials:232 - 凭证已保存到 credentials.json 文件。
+2025-07-09 17:19:29.873 | INFO     | __main__:start_login_process:199 - 登录线程已启动。
+2025-07-09 17:19:29.873 | INFO     | __main__:run:44 - 正在启动浏览器...
+2025-07-09 17:19:31.798 | INFO     | __main__:run:58 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/UserChoose.html?BackUrl=https%3a%2f%2fgyytygyy.xidian.edu.cn%2fViews%2fUser%2fUser.html
+2025-07-09 17:19:31.799 | INFO     | __main__:run:64 - 等待跳转到验证页面 (B页面)...
+2025-07-09 17:19:49.449 | ERROR    | __main__:run:105 - WebDriver错误：Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.51); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff747566f75+76917]
+	GetHandleVerifier [0x0x7ff747566fd0+77008]
+	(No symbol) [0x0x7ff747319dea]
+	(No symbol) [0x0x7ff747305f15]
+	(No symbol) [0x0x7ff74732abf4]
+	(No symbol) [0x0x7ff74739fa85]
+	(No symbol) [0x0x7ff7473bff72]
+	(No symbol) [0x0x7ff747398243]
+	(No symbol) [0x0x7ff747361431]
+	(No symbol) [0x0x7ff7473621c3]
+	GetHandleVerifier [0x0x7ff74783d2ad+3051437]
+	GetHandleVerifier [0x0x7ff747837903+3028483]
+	GetHandleVerifier [0x0x7ff74785589d+3151261]
+	GetHandleVerifier [0x0x7ff74758183e+185662]
+	GetHandleVerifier [0x0x7ff7475896ff+218111]
+	GetHandleVerifier [0x0x7ff74756faf4+112628]
+	GetHandleVerifier [0x0x7ff74756fca9+113065]
+	GetHandleVerifier [0x0x7ff747556c78+10616]
+	BaseThreadInitThunk [0x0x7ffa30027374+20]
+	RtlUserThreadStart [0x0x7ffa31b3cc91+33]
+
+2025-07-09 17:19:49.450 | ERROR    | __main__:on_login_failed:218 - 登录失败信号接收：WebDriver错误：请确保浏览器驱动已正确安装并可在PATH中找到，或指定正确的路径。错误信息：Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=138.0.7204.51); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff747566f75+76917]
+	GetHandleVerifier [0x0x7ff747566fd0+77008]
+	(No symbol) [0x0x7ff747319dea]
+	(No symbol) [0x0x7ff747305f15]
+	(No symbol) [0x0x7ff74732abf4]
+	(No symbol) [0x0x7ff74739fa85]
+	(No symbol) [0x0x7ff7473bff72]
+	(No symbol) [0x0x7ff747398243]
+	(No symbol) [0x0x7ff747361431]
+	(No symbol) [0x0x7ff7473621c3]
+	GetHandleVerifier [0x0x7ff74783d2ad+3051437]
+	GetHandleVerifier [0x0x7ff747837903+3028483]
+	GetHandleVerifier [0x0x7ff74785589d+3151261]
+	GetHandleVerifier [0x0x7ff74758183e+185662]
+	GetHandleVerifier [0x0x7ff7475896ff+218111]
+	GetHandleVerifier [0x0x7ff74756faf4+112628]
+	GetHandleVerifier [0x0x7ff74756fca9+113065]
+	GetHandleVerifier [0x0x7ff747556c78+10616]
+	BaseThreadInitThunk [0x0x7ffa30027374+20]
+	RtlUserThreadStart [0x0x7ffa31b3cc91+33]
+
+2025-07-09 17:19:51.502 | INFO     | __main__:run:116 - 浏览器已关闭。
+2025-07-09 17:20:06.995 | INFO     | __main__:start_login_process:199 - 登录线程已启动。
+2025-07-09 17:20:06.997 | INFO     | __main__:run:44 - 正在启动浏览器...
+2025-07-09 17:20:08.979 | INFO     | __main__:run:58 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-09 17:20:08.980 | INFO     | __main__:run:64 - 等待跳转到验证页面 (B页面)...
+2025-07-09 17:20:15.627 | INFO     | __main__:run:70 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-09 17:20:15.627 | INFO     | __main__:run:82 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-09 17:20:37.634 | INFO     | __main__:run:90 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-09 17:20:37.634 | INFO     | __main__:run:95 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-09 17:20:39.773 | INFO     | __main__:_get_credentials_from_driver:133 - 获取到 8 条Cookie。
+2025-07-09 17:20:39.776 | INFO     | __main__:_get_credentials_from_driver:141 - 获取到 Local Storage 数据。
+2025-07-09 17:20:39.779 | INFO     | __main__:_get_credentials_from_driver:151 - 获取到 Session Storage 数据。
+2025-07-09 17:20:39.780 | INFO     | __main__:on_login_success:205 - 登录成功信号接收。
+2025-07-09 17:20:41.875 | INFO     | __main__:run:116 - 浏览器已关闭。
+2025-07-09 17:20:42.482 | INFO     | __main__:_save_credentials:232 - 凭证已保存到 credentials.json 文件。
+2025-07-09 17:56:36.726 | INFO     | __main__:start_login_process:200 - 登录线程已启动。
+2025-07-09 17:56:36.726 | INFO     | __main__:run:45 - 正在启动浏览器...
+2025-07-09 17:56:42.744 | INFO     | __main__:run:59 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-09 17:56:42.744 | INFO     | __main__:run:65 - 等待跳转到验证页面 (B页面)...
+2025-07-09 17:56:50.183 | INFO     | __main__:run:71 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-09 17:56:50.184 | INFO     | __main__:run:83 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-09 17:57:00.094 | INFO     | __main__:run:91 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-09 17:57:00.095 | INFO     | __main__:run:96 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-09 17:57:02.714 | INFO     | __main__:_get_credentials_from_driver:134 - 获取到 8 条Cookie。
+2025-07-09 17:57:02.718 | INFO     | __main__:_get_credentials_from_driver:142 - 获取到 Local Storage 数据。
+2025-07-09 17:57:02.720 | INFO     | __main__:_get_credentials_from_driver:152 - 获取到 Session Storage 数据。
+2025-07-09 17:57:02.721 | INFO     | __main__:on_login_success:206 - 登录成功信号接收。
+2025-07-09 17:57:04.187 | INFO     | __main__:_save_credentials:242 - 凭证已保存到: C:\Users\SXH\Desktop\A-Project\XidianGymAppointmentTool\gui\config\credentials.json
+2025-07-09 17:57:04.813 | INFO     | __main__:run:117 - 浏览器已关闭。

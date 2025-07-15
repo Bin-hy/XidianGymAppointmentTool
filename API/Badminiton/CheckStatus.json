@@ -1,0 +1,18 @@
+[
+  {
+    "FieldNo": "YMQ006",
+    "FieldTypeNo": "001",
+    "FieldName": "羽毛球6",
+    "BeginTime": "13:00",
+    "Endtime": "14:00",
+    "Price": "12.00"
+  },
+  {
+    "FieldNo": "YMQ007",
+    "FieldTypeNo": "001",
+    "FieldName": "羽毛球7",
+    "BeginTime": "13:00",
+    "Endtime": "14:00",
+    "Price": "12.00"
+  }
+]

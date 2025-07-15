@@ -1,0 +1,15 @@
+"""
+定义应用程序中使用的环境变量键名常量。
+这有助于避免硬编码字符串，提高代码可读性和可维护性。
+"""
+
+# 邮件配置相关的环境变量键名
+EMAIL_SMTP_SERVER = "EMAIL_SMTP_SERVER"
+EMAIL_SMTP_PORT = "EMAIL_SMTP_PORT"
+EMAIL_USE_TLS = "EMAIL_USE_TLS"
+EMAIL_SENDER_EMAIL = "EMAIL_SENDER_EMAIL"
+EMAIL_SENDER_PASSWORD = "EMAIL_SENDER_PASSWORD"
+
+# 其他可能的应用配置环境变量 (如果需要，可在此添加)
+APP_DEBUG_MODE = "APP_DEBUG_MODE"
+# ...

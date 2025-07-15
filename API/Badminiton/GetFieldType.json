@@ -1,0 +1,25 @@
+[
+  {
+    "FieldTypeNo": "021",
+    "FieldTypeName": "广研院羽毛球",
+    "Pinyin": "gyyymq",
+    "FieldColor": "",
+    "Remark": "",
+    "IsHalf": 0,
+    "MaxPeople": 6,
+    "OperNo": "admin",
+    "OperDate": "2024-10-31 10:34:31",
+    "DefaultTime": 60,
+    "WXOrderMinTime": 59,
+    "SXType": 0,
+    "SXRate": null,
+    "SXMinNum": null,
+    "UserType": 0,
+    "MinPeople": 1,
+    "DisplayName": "羽毛球",
+    "WXIconName": "yumaoqiu",
+    "TolerantTime": 5,
+    "DayNumlimit": null,
+    "SharePeople": 5
+  }
+]

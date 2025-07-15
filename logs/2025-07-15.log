@@ -1,0 +1,418 @@
+2025-07-15 06:51:41 | INFO     | core.schedule_task:__new__:33 - SchedulerManager: BackgroundScheduler 已初始化。
+2025-07-15 06:51:42 | INFO     | gui.badminton_booking_page:_fetch_initial_reference_venue_state:186 - 初始加载：正在获取昨天的场地信息作为参考...
+2025-07-15 06:51:42 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=-1, TimePeriod=0
+2025-07-15 06:51:42 | INFO     | gui.main_windows:_load_initial_user_status:270 - 尝试加载初始用户状态...
+2025-07-15 06:51:42 | INFO     | gui.main_windows:_fetch_and_display_user_info:291 - 尝试获取用户信息...
+2025-07-15 06:51:47 | INFO     | gui.main_windows:_fetch_and_display_user_info:300 - 获取到用户名: 侯岚翔
+2025-07-15 06:51:47 | INFO     | gui.main_windows:_load_and_display_avatar:320 - 正在加载头像: https://wework.qpic.cn/wwpic3az/140326_JB7hsLjfQluboix_1722488622/0
+2025-07-15 06:51:47 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 06:51:47 | INFO     | gui.main_windows:_on_avatar_download_finished:355 - 头像加载成功。
+2025-07-15 06:51:57 | INFO     | gui.main_windows:_on_sport_selected:251 - 点击了 羽毛球 图标。
+2025-07-15 06:52:07 | INFO     | gui.badminton_booking_page:_on_date_changed:167 - 预约日期选择改变为: 2025-07-15
+2025-07-15 06:52:07 | INFO     | gui.badminton_booking_page:_fetch_venue_state:211 - 正在获取当前选择日期的场地信息...
+2025-07-15 06:52:07 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=0, TimePeriod=0
+2025-07-15 06:52:09 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 06:52:09 | WARNING  | gui.badminton_booking_page:_on_venue_state_fetched:248 - 当前获取的场地信息中，没有找到可预订的场次。
+2025-07-15 06:53:11 | INFO     | gui.badminton_booking_page:_on_time_period_changed:173 - 时间段选择改变为: 下午 (12:00-18:00) (值: 1)
+2025-07-15 06:53:11 | INFO     | gui.badminton_booking_page:_fetch_venue_state:211 - 正在获取当前选择日期的场地信息...
+2025-07-15 06:53:11 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=0, TimePeriod=1
+2025-07-15 06:53:12 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 06:53:12 | WARNING  | gui.badminton_booking_page:_on_venue_state_fetched:248 - 当前获取的场地信息中，没有找到可预订的场次。
+2025-07-15 06:53:14 | INFO     | gui.badminton_booking_page:_on_field_button_toggle_selection:395 - 已选中场地: 羽毛球场1号 14:00-15:00
+2025-07-15 06:53:15 | INFO     | gui.badminton_booking_page:_on_field_button_toggle_selection:395 - 已选中场地: 羽毛球场1号 13:00-14:00
+2025-07-15 06:53:20 | INFO     | core.schedule_task:add_booking_task:87 - SchedulerManager: 定时预约任务已添加，将在 2025-07-15 07:54:00 执行。任务ID: booking_job_1752537240.0_-7953023689428083105
+2025-07-15 06:53:34 | INFO     | core.schedule_task:add_booking_task:87 - SchedulerManager: 定时预约任务已添加，将在 2025-07-15 06:54:00 执行。任务ID: booking_job_1752533640.0_-7953023689428083105
+2025-07-15 07:06:03 | INFO     | core.schedule_task:__new__:33 - SchedulerManager: BackgroundScheduler 已初始化。
+2025-07-15 07:06:03 | INFO     | gui.badminton_booking_page:_fetch_initial_reference_venue_state:186 - 初始加载：正在获取昨天的场地信息作为参考...
+2025-07-15 07:06:03 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=-1, TimePeriod=0
+2025-07-15 07:06:03 | INFO     | core.schedule_task:start:42 - SchedulerManager: BackgroundScheduler 已启动。
+2025-07-15 07:06:03 | INFO     | gui.main_windows:__init__:175 - MainWindow: 定时任务调度器已启动。
+2025-07-15 07:06:03 | INFO     | gui.main_windows:_add_test_scheduler_job:200 - MainWindow: 已添加每5秒执行一次的APScheduler测试任务。
+2025-07-15 07:06:03 | INFO     | gui.main_windows:_load_initial_user_status:311 - 尝试加载初始用户状态...
+2025-07-15 07:06:03 | INFO     | gui.main_windows:_fetch_and_display_user_info:332 - 尝试获取用户信息...
+2025-07-15 07:06:03 | ERROR    | gui.main_windows:_fetch_and_display_user_info:357 - 获取用户信息时发生错误: cannot import name 'GetUserInfo' from 'API.Badminiton.API' (C:\Users\SXH\Desktop\A-Project\XidianGymAppointmentTool\API\Badminiton\API.py)
+2025-07-15 07:06:06 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 07:06:08 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:06:08
+2025-07-15 07:06:13 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:06:13
+2025-07-15 07:06:18 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:06:18
+2025-07-15 07:06:23 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:06:23
+2025-07-15 07:06:28 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:06:28
+2025-07-15 07:06:33 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:06:33
+2025-07-15 07:06:48 | INFO     | core.schedule_task:__new__:33 - SchedulerManager: BackgroundScheduler 已初始化。
+2025-07-15 07:06:48 | INFO     | gui.badminton_booking_page:_fetch_initial_reference_venue_state:186 - 初始加载：正在获取昨天的场地信息作为参考...
+2025-07-15 07:06:48 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=-1, TimePeriod=0
+2025-07-15 07:06:48 | INFO     | core.schedule_task:start:42 - SchedulerManager: BackgroundScheduler 已启动。
+2025-07-15 07:06:48 | INFO     | gui.main_windows:__init__:175 - MainWindow: 定时任务调度器已启动。
+2025-07-15 07:06:48 | INFO     | gui.main_windows:_add_test_scheduler_job:200 - MainWindow: 已添加每5秒执行一次的APScheduler测试任务。
+2025-07-15 07:06:48 | INFO     | gui.main_windows:_load_initial_user_status:311 - 尝试加载初始用户状态...
+2025-07-15 07:06:48 | INFO     | gui.main_windows:_fetch_and_display_user_info:332 - 尝试获取用户信息...
+2025-07-15 07:06:48 | ERROR    | gui.main_windows:_fetch_and_display_user_info:357 - 获取用户信息时发生错误: cannot import name 'GetUserInfo' from 'API.Badminiton.API' (C:\Users\SXH\Desktop\A-Project\XidianGymAppointmentTool\API\Badminiton\API.py)
+2025-07-15 07:06:51 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 07:06:53 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:06:53
+2025-07-15 07:06:58 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:06:58
+2025-07-15 07:06:58 | INFO     | gui.main_windows:_logout_user:263 - 用户退出登录。
+2025-07-15 07:07:01 | INFO     | gui.login_page:_start_login_process:221 - 登录线程已启动。
+2025-07-15 07:07:01 | INFO     | gui.login_page:run:42 - 正在启动浏览器...
+2025-07-15 07:07:03 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:03
+2025-07-15 07:07:03 | INFO     | gui.login_page:run:58 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-15 07:07:03 | INFO     | gui.login_page:run:64 - 等待跳转到验证页面 (B页面)...
+2025-07-15 07:07:08 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:08
+2025-07-15 07:07:11 | INFO     | gui.login_page:run:70 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-15 07:07:11 | INFO     | gui.login_page:run:83 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-15 07:07:13 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:13
+2025-07-15 07:07:18 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:18
+2025-07-15 07:07:23 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:23
+2025-07-15 07:07:28 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:28
+2025-07-15 07:07:33 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:33
+2025-07-15 07:07:38 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:38
+2025-07-15 07:07:40 | INFO     | gui.login_page:run:92 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-15 07:07:40 | INFO     | gui.login_page:run:97 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-15 07:07:42 | INFO     | gui.login_page:_get_credentials_from_driver:136 - 获取到 8 条Cookie。
+2025-07-15 07:07:42 | INFO     | gui.login_page:_get_credentials_from_driver:144 - 获取到 Local Storage 数据。
+2025-07-15 07:07:42 | INFO     | gui.login_page:_get_credentials_from_driver:154 - 获取到 Session Storage 数据。
+2025-07-15 07:07:42 | INFO     | gui.login_page:_on_login_success:227 - 登录成功信号接收。
+2025-07-15 07:07:43 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:43
+2025-07-15 07:07:44 | INFO     | gui.login_page:run:119 - 浏览器已关闭。
+2025-07-15 07:07:45 | INFO     | gui.main_windows:_on_login_successful_from_page:278 - 从登录页面接收到登录成功信号。
+2025-07-15 07:07:45 | INFO     | gui.main_windows:_fetch_and_display_user_info:332 - 尝试获取用户信息...
+2025-07-15 07:07:45 | ERROR    | gui.main_windows:_fetch_and_display_user_info:357 - 获取用户信息时发生错误: cannot import name 'GetUserInfo' from 'API.Badminiton.API' (C:\Users\SXH\Desktop\A-Project\XidianGymAppointmentTool\API\Badminiton\API.py)
+2025-07-15 07:07:48 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:48
+2025-07-15 07:07:53 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:53
+2025-07-15 07:07:55 | INFO     | gui.main_windows:_on_sport_selected:292 - 点击了 羽毛球 图标。
+2025-07-15 07:07:58 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:07:58
+2025-07-15 07:08:02 | INFO     | gui.badminton_booking_page:_on_date_changed:167 - 预约日期选择改变为: 2025-07-15
+2025-07-15 07:08:02 | INFO     | gui.badminton_booking_page:_fetch_venue_state:211 - 正在获取当前选择日期的场地信息...
+2025-07-15 07:08:02 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=0, TimePeriod=0
+2025-07-15 07:08:03 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:03
+2025-07-15 07:08:04 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 07:08:04 | WARNING  | gui.badminton_booking_page:_on_venue_state_fetched:248 - 当前获取的场地信息中，没有找到可预订的场次。
+2025-07-15 07:08:08 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:08
+2025-07-15 07:08:13 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:13
+2025-07-15 07:08:18 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:18
+2025-07-15 07:08:23 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:23
+2025-07-15 07:08:28 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:28
+2025-07-15 07:08:33 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:33
+2025-07-15 07:08:38 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:38
+2025-07-15 07:08:43 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:43
+2025-07-15 07:08:48 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:48
+2025-07-15 07:08:48 | INFO     | gui.badminton_booking_page:_on_field_button_toggle_selection:395 - 已选中场地: 羽毛球场1号 10:00-11:00
+2025-07-15 07:08:50 | INFO     | core.schedule_task:add_booking_task:87 - SchedulerManager: 定时预约任务已添加，将在 2025-07-15 07:10:00 执行。任务ID: booking_job_1752534600.0_7970772438850124313
+2025-07-15 07:08:53 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:53
+2025-07-15 07:08:58 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:08:58
+2025-07-15 07:09:03 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:03
+2025-07-15 07:09:08 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:08
+2025-07-15 07:09:13 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:13
+2025-07-15 07:09:18 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:18
+2025-07-15 07:09:23 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:23
+2025-07-15 07:09:28 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:28
+2025-07-15 07:09:33 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:33
+2025-07-15 07:09:38 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:38
+2025-07-15 07:09:43 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:43
+2025-07-15 07:09:48 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:48
+2025-07-15 07:09:53 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:53
+2025-07-15 07:09:58 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:09:58
+2025-07-15 07:10:00 | INFO     | core.schedule_task:_execute_booking_job:100 - SchedulerManager: >>> _execute_booking_job 函数开始执行，当前时间: 2025-07-15 07:10:00 <<<
+2025-07-15 07:10:00 | INFO     | core.schedule_task:_execute_booking_job:106 - SchedulerManager: 正在执行定时预约任务，目标日期: 2025-07-15。
+2025-07-15 07:10:00 | INFO     | core.schedule_task:_execute_booking_job:118 - SchedulerManager: 调用 OrderField API，参数: checkdata=[{'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 07:10:00 | INFO     | core.schedule_task:_execute_booking_job:121 - SchedulerManager: OrderField API 响应: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 07:10:00 | WARNING  | core.schedule_task:_execute_booking_job:134 - SchedulerManager: 预约失败 (场地冲突/手速不够快): 当前时间段有场地不可用，请刷新页面后重新选择
+2025-07-15 07:10:03 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:10:03
+2025-07-15 07:10:08 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:10:08
+2025-07-15 07:10:13 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:10:13
+2025-07-15 07:10:18 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:10:18
+2025-07-15 07:10:23 | INFO     | gui.main_windows:test_job:188 - MainWindow: APScheduler 测试任务正在执行！当前时间: 07:10:23
+2025-07-15 07:14:21 | INFO     | core.schedule_task:__new__:33 - SchedulerManager: BackgroundScheduler 已初始化。
+2025-07-15 07:14:22 | INFO     | gui.badminton_booking_page:_fetch_initial_reference_venue_state:186 - 初始加载：正在获取昨天的场地信息作为参考...
+2025-07-15 07:14:22 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=-1, TimePeriod=0
+2025-07-15 07:14:22 | INFO     | core.schedule_task:start:42 - SchedulerManager: BackgroundScheduler 已启动。
+2025-07-15 07:14:22 | INFO     | gui.main_windows:__init__:175 - MainWindow: 定时任务调度器已启动。
+2025-07-15 07:14:22 | INFO     | gui.main_windows:_load_initial_user_status:312 - 尝试加载初始用户状态...
+2025-07-15 07:14:22 | INFO     | gui.main_windows:_fetch_and_display_user_info:333 - 尝试获取用户信息...
+2025-07-15 07:14:22 | ERROR    | gui.main_windows:_fetch_and_display_user_info:358 - 获取用户信息时发生错误: cannot import name 'GetUserInfo' from 'API.Badminiton.API' (C:\Users\SXH\Desktop\A-Project\XidianGymAppointmentTool\API\Badminiton\API.py)
+2025-07-15 07:14:24 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 07:14:28 | INFO     | gui.main_windows:_logout_user:264 - 用户退出登录。
+2025-07-15 07:18:33 | INFO     | core.schedule_task:__new__:33 - SchedulerManager: BackgroundScheduler 已初始化。
+2025-07-15 07:18:34 | INFO     | gui.badminton_booking_page:_fetch_initial_reference_venue_state:186 - 初始加载：正在获取昨天的场地信息作为参考...
+2025-07-15 07:18:34 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=-1, TimePeriod=0
+2025-07-15 07:18:34 | INFO     | core.schedule_task:start:42 - SchedulerManager: BackgroundScheduler 已启动。
+2025-07-15 07:18:34 | INFO     | gui.main_windows:__init__:175 - MainWindow: 定时任务调度器已启动。
+2025-07-15 07:18:34 | INFO     | gui.main_windows:_load_initial_user_status:312 - 尝试加载初始用户状态...
+2025-07-15 07:18:34 | INFO     | gui.main_windows:_fetch_and_display_user_info:333 - 尝试获取用户信息...
+2025-07-15 07:18:37 | INFO     | gui.main_windows:_fetch_and_display_user_info:344 - 获取到用户名: 侯岚翔
+2025-07-15 07:18:37 | INFO     | gui.main_windows:_load_and_display_avatar:364 - 正在加载头像: https://wework.qpic.cn/wwpic3az/140326_JB7hsLjfQluboix_1722488622/0
+2025-07-15 07:18:37 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 07:18:37 | INFO     | gui.main_windows:_on_avatar_download_finished:398 - 头像加载成功。
+2025-07-15 07:18:40 | INFO     | gui.main_windows:_on_sport_selected:293 - 点击了 羽毛球 图标。
+2025-07-15 07:18:50 | INFO     | gui.badminton_booking_page:_on_date_changed:167 - 预约日期选择改变为: 2025-07-15
+2025-07-15 07:18:50 | INFO     | gui.badminton_booking_page:_fetch_venue_state:211 - 正在获取当前选择日期的场地信息...
+2025-07-15 07:18:50 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=0, TimePeriod=0
+2025-07-15 07:18:52 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 07:18:52 | WARNING  | gui.badminton_booking_page:_on_venue_state_fetched:248 - 当前获取的场地信息中，没有找到可预订的场次。
+2025-07-15 07:19:10 | INFO     | gui.badminton_booking_page:_on_time_period_changed:173 - 时间段选择改变为: 下午 (12:00-18:00) (值: 1)
+2025-07-15 07:19:10 | INFO     | gui.badminton_booking_page:_fetch_venue_state:211 - 正在获取当前选择日期的场地信息...
+2025-07-15 07:19:10 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=0, TimePeriod=1
+2025-07-15 07:19:10 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 07:19:10 | WARNING  | gui.badminton_booking_page:_on_venue_state_fetched:248 - 当前获取的场地信息中，没有找到可预订的场次。
+2025-07-15 07:19:12 | INFO     | gui.badminton_booking_page:_on_field_button_toggle_selection:395 - 已选中场地: 羽毛球场1号 13:00-14:00
+2025-07-15 07:19:13 | INFO     | gui.badminton_booking_page:_on_field_button_toggle_selection:395 - 已选中场地: 羽毛球场1号 14:00-15:00
+2025-07-15 07:19:16 | INFO     | core.schedule_task:add_booking_task:87 - SchedulerManager: 定时预约任务已添加，将在 2025-07-15 08:00:00 执行。任务ID: booking_job_1752537600.0_4108324473810884980
+2025-07-15 07:19:44 | INFO     | core.schedule_task:add_booking_task:87 - SchedulerManager: 定时预约任务已添加，将在 2025-07-15 07:20:00 执行。任务ID: booking_job_1752535200.0_4108324473810884980
+2025-07-15 07:20:00 | INFO     | core.schedule_task:_execute_booking_job:100 - SchedulerManager: >>> _execute_booking_job 函数开始执行，当前时间: 2025-07-15 07:20:00 <<<
+2025-07-15 07:20:00 | INFO     | core.schedule_task:_execute_booking_job:106 - SchedulerManager: 正在执行定时预约任务，目标日期: 2025-07-15。
+2025-07-15 07:20:00 | INFO     | core.schedule_task:_execute_booking_job:118 - SchedulerManager: 调用 OrderField API，参数: checkdata=[{'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}, {'BeginTime': '14:00', 'Count': '2', 'DateBeginTime': '2025-07-15 14:00:00', 'DateEndTime': '2025-07-15 15:00:00', 'EndTime': '15:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '任**已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 07:20:01 | INFO     | core.schedule_task:_execute_booking_job:121 - SchedulerManager: OrderField API 响应: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 07:20:01 | WARNING  | core.schedule_task:_execute_booking_job:134 - SchedulerManager: 预约失败 (场地冲突/手速不够快): 当前时间段有场地不可用，请刷新页面后重新选择
+2025-07-15 07:20:45 | INFO     | core.schedule_task:add_booking_task:87 - SchedulerManager: 定时预约任务已添加，将在 2025-07-15 08:01:00 执行。任务ID: booking_job_1752537660.0_4108324473810884980
+2025-07-15 08:00:00 | INFO     | core.schedule_task:_execute_booking_job:100 - SchedulerManager: >>> _execute_booking_job 函数开始执行，当前时间: 2025-07-15 08:00:00 <<<
+2025-07-15 08:00:00 | INFO     | core.schedule_task:_execute_booking_job:106 - SchedulerManager: 正在执行定时预约任务，目标日期: 2025-07-15。
+2025-07-15 08:00:00 | INFO     | core.schedule_task:_execute_booking_job:118 - SchedulerManager: 调用 OrderField API，参数: checkdata=[{'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}, {'BeginTime': '14:00', 'Count': '2', 'DateBeginTime': '2025-07-15 14:00:00', 'DateEndTime': '2025-07-15 15:00:00', 'EndTime': '15:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '任**已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:00:01 | INFO     | core.schedule_task:_execute_booking_job:121 - SchedulerManager: OrderField API 响应: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 08:00:01 | WARNING  | core.schedule_task:_execute_booking_job:134 - SchedulerManager: 预约失败 (场地冲突/手速不够快): 当前时间段有场地不可用，请刷新页面后重新选择
+2025-07-15 08:01:00 | INFO     | core.schedule_task:_execute_booking_job:100 - SchedulerManager: >>> _execute_booking_job 函数开始执行，当前时间: 2025-07-15 08:01:00 <<<
+2025-07-15 08:01:00 | INFO     | core.schedule_task:_execute_booking_job:106 - SchedulerManager: 正在执行定时预约任务，目标日期: 2025-07-15。
+2025-07-15 08:01:00 | INFO     | core.schedule_task:_execute_booking_job:118 - SchedulerManager: 调用 OrderField API，参数: checkdata=[{'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}, {'BeginTime': '14:00', 'Count': '2', 'DateBeginTime': '2025-07-15 14:00:00', 'DateEndTime': '2025-07-15 15:00:00', 'EndTime': '15:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '任**已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:01:00 | INFO     | core.schedule_task:_execute_booking_job:121 - SchedulerManager: OrderField API 响应: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 08:01:00 | WARNING  | core.schedule_task:_execute_booking_job:134 - SchedulerManager: 预约失败 (场地冲突/手速不够快): 当前时间段有场地不可用，请刷新页面后重新选择
+2025-07-15 08:27:32 | INFO     | core.schedule_task:__new__:31 - SchedulerManager: BackgroundScheduler 已初始化。
+2025-07-15 08:27:32 | INFO     | gui.badminton_booking_page:_fetch_initial_reference_venue_state:186 - 初始加载：正在获取昨天的场地信息作为参考...
+2025-07-15 08:27:32 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=-1, TimePeriod=0
+2025-07-15 08:27:32 | INFO     | core.schedule_task:start:40 - SchedulerManager: BackgroundScheduler 已启动。
+2025-07-15 08:27:32 | INFO     | gui.main_windows:__init__:175 - MainWindow: 定时任务调度器已启动。
+2025-07-15 08:27:32 | INFO     | gui.main_windows:_load_initial_user_status:312 - 尝试加载初始用户状态...
+2025-07-15 08:27:32 | INFO     | gui.main_windows:_fetch_and_display_user_info:333 - 尝试获取用户信息...
+2025-07-15 08:27:35 | INFO     | gui.main_windows:_fetch_and_display_user_info:344 - 获取到用户名: 侯岚翔
+2025-07-15 08:27:35 | INFO     | gui.main_windows:_load_and_display_avatar:364 - 正在加载头像: https://wework.qpic.cn/wwpic3az/140326_JB7hsLjfQluboix_1722488622/0
+2025-07-15 08:27:36 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 08:27:36 | INFO     | gui.main_windows:_on_avatar_download_finished:398 - 头像加载成功。
+2025-07-15 08:27:39 | INFO     | gui.main_windows:_on_sport_selected:293 - 点击了 羽毛球 图标。
+2025-07-15 08:27:45 | INFO     | gui.badminton_booking_page:_on_date_changed:167 - 预约日期选择改变为: 2025-07-15
+2025-07-15 08:27:45 | INFO     | gui.badminton_booking_page:_fetch_venue_state:211 - 正在获取当前选择日期的场地信息...
+2025-07-15 08:27:45 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=0, TimePeriod=0
+2025-07-15 08:27:47 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 08:27:47 | WARNING  | gui.badminton_booking_page:_on_venue_state_fetched:248 - 当前获取的场地信息中，没有找到可预订的场次。
+2025-07-15 08:27:52 | INFO     | gui.badminton_booking_page:_on_field_button_toggle_selection:395 - 已选中场地: 羽毛球场1号 11:00-12:00
+2025-07-15 08:27:53 | INFO     | gui.badminton_booking_page:_on_field_button_toggle_selection:395 - 已选中场地: 羽毛球场1号 10:00-11:00
+2025-07-15 08:27:54 | WARNING  | core.schedule_task:add_booking_task:67 - SchedulerManager: 任务执行时间 2025-07-15 08:00:00 已过期或为当前时间，将尝试立即执行。
+2025-07-15 08:27:54 | INFO     | core.schedule_task:_execute_booking_job:97 - SchedulerManager: >>> _execute_booking_job 函数开始执行，当前时间: 2025-07-15 08:27:54 <<<
+2025-07-15 08:27:54 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 1 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:27:54 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:27:55 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 08:27:55 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 当前时间段有场地不可用，请刷新页面后重新选择. Retrying...
+2025-07-15 08:27:55 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 2 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:27:55 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:27:55 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:27:55 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:27:56 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 3 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:27:56 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:27:56 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:27:56 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:27:57 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 4 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:27:57 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:27:57 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:27:57 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:27:57 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 5 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:27:57 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:27:58 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:27:58 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:27:58 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 6 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:27:58 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:27:58 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:27:58 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:27:59 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 7 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:27:59 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:28:00 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 08:28:00 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 当前时间段有场地不可用，请刷新页面后重新选择. Retrying...
+2025-07-15 08:28:01 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 8 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:28:01 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:28:01 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:28:01 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:28:01 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 9 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:28:01 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:28:02 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:28:02 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:28:02 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 10 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:28:02 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:28:02 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:28:02 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:28:03 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 11 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:28:03 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:28:03 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:28:03 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:28:04 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 12 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:28:04 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '11:00', 'Count': '2', 'DateBeginTime': '2025-07-15 11:00:00', 'DateEndTime': '2025-07-15 12:00:00', 'EndTime': '12:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}, {'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:28:04 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:28:04 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:28:04 | WARNING  | core.schedule_task:_execute_booking_job:171 - SchedulerManager: No email address provided and booking failed after all attempts.
+2025-07-15 08:34:44 | INFO     | core.schedule_task:__new__:31 - SchedulerManager: BackgroundScheduler 已初始化。
+2025-07-15 08:34:44 | INFO     | gui.badminton_booking_page:_fetch_initial_reference_venue_state:186 - 初始加载：正在获取昨天的场地信息作为参考...
+2025-07-15 08:34:44 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=-1, TimePeriod=0
+2025-07-15 08:34:44 | INFO     | core.schedule_task:start:40 - SchedulerManager: BackgroundScheduler 已启动。
+2025-07-15 08:34:44 | INFO     | gui.main_windows:__init__:175 - MainWindow: 定时任务调度器已启动。
+2025-07-15 08:34:44 | INFO     | gui.main_windows:_load_initial_user_status:312 - 尝试加载初始用户状态...
+2025-07-15 08:34:44 | INFO     | gui.main_windows:_fetch_and_display_user_info:333 - 尝试获取用户信息...
+2025-07-15 08:34:45 | INFO     | gui.main_windows:_fetch_and_display_user_info:344 - 获取到用户名: 侯岚翔
+2025-07-15 08:34:45 | INFO     | gui.main_windows:_load_and_display_avatar:364 - 正在加载头像: https://wework.qpic.cn/wwpic3az/140326_JB7hsLjfQluboix_1722488622/0
+2025-07-15 08:34:45 | INFO     | gui.main_windows:_on_avatar_download_finished:398 - 头像加载成功。
+2025-07-15 08:34:47 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 08:34:58 | INFO     | gui.main_windows:_on_sport_selected:293 - 点击了 羽毛球 图标。
+2025-07-15 08:35:09 | INFO     | gui.badminton_booking_page:_on_date_changed:167 - 预约日期选择改变为: 2025-07-15
+2025-07-15 08:35:09 | INFO     | gui.badminton_booking_page:_fetch_venue_state:211 - 正在获取当前选择日期的场地信息...
+2025-07-15 08:35:09 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=0, TimePeriod=0
+2025-07-15 08:35:11 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 08:35:11 | WARNING  | gui.badminton_booking_page:_on_venue_state_fetched:248 - 当前获取的场地信息中，没有找到可预订的场次。
+2025-07-15 08:35:13 | INFO     | gui.badminton_booking_page:_on_field_button_toggle_selection:395 - 已选中场地: 羽毛球场1号 10:00-11:00
+2025-07-15 08:35:14 | WARNING  | core.schedule_task:add_booking_task:67 - SchedulerManager: 任务执行时间 2025-07-15 08:00:00 已过期或为当前时间，将尝试立即执行。
+2025-07-15 08:35:14 | INFO     | core.schedule_task:_execute_booking_job:97 - SchedulerManager: >>> _execute_booking_job 函数开始执行，当前时间: 2025-07-15 08:35:14 <<<
+2025-07-15 08:35:14 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 1 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:35:14 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:35:15 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 08:35:15 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 当前时间段有场地不可用，请刷新页面后重新选择. Retrying...
+2025-07-15 08:35:16 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 2 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:35:16 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:35:17 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:35:17 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:35:18 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 3 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:35:18 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:35:18 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:35:18 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:35:19 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 4 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:35:19 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:35:19 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:35:19 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:35:20 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 5 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:35:20 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:35:21 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 08:35:21 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 当前时间段有场地不可用，请刷新页面后重新选择. Retrying...
+2025-07-15 08:35:22 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 6 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:35:22 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:35:23 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:35:23 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:35:24 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 7 to execute booking task for target date: 2025-07-15.
+2025-07-15 08:35:24 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '10:00', 'Count': '2', 'DateBeginTime': '2025-07-15 10:00:00', 'DateEndTime': '2025-07-15 11:00:00', 'EndTime': '11:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '0', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 08:35:24 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 08:35:24 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 08:35:25 | WARNING  | core.schedule_task:_execute_booking_job:171 - SchedulerManager: No email address provided and booking failed after all attempts.
+2025-07-15 08:35:31 | INFO     | gui.main_windows:closeEvent:210 - MainWindow: 应用程序即将关闭，正在关闭定时任务调度器...
+2025-07-15 08:35:31 | INFO     | core.schedule_task:shutdown:51 - SchedulerManager: BackgroundScheduler 已关闭。
+2025-07-15 08:35:31 | INFO     | gui.main_windows:closeEvent:212 - MainWindow: 定时任务调度器已关闭。
+2025-07-15 10:08:34 | INFO     | core.schedule_task:__new__:31 - SchedulerManager: BackgroundScheduler 已初始化。
+2025-07-15 10:08:34 | INFO     | gui.badminton_booking_page:_fetch_initial_reference_venue_state:186 - 初始加载：正在获取昨天的场地信息作为参考...
+2025-07-15 10:08:34 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=-1, TimePeriod=0
+2025-07-15 10:08:34 | INFO     | core.schedule_task:start:40 - SchedulerManager: BackgroundScheduler 已启动。
+2025-07-15 10:08:34 | INFO     | gui.main_windows:__init__:175 - MainWindow: 定时任务调度器已启动。
+2025-07-15 10:08:34 | INFO     | gui.main_windows:_load_initial_user_status:312 - 尝试加载初始用户状态...
+2025-07-15 10:08:34 | INFO     | gui.main_windows:_fetch_and_display_user_info:333 - 尝试获取用户信息...
+2025-07-15 10:08:35 | INFO     | gui.main_windows:_fetch_and_display_user_info:344 - 获取到用户名: 侯岚翔
+2025-07-15 10:08:35 | INFO     | gui.main_windows:_load_and_display_avatar:364 - 正在加载头像: https://wework.qpic.cn/wwpic3az/140326_JB7hsLjfQluboix_1722488622/0
+2025-07-15 10:08:35 | INFO     | gui.main_windows:_on_avatar_download_finished:398 - 头像加载成功。
+2025-07-15 10:08:38 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 10:08:39 | INFO     | gui.main_windows:_logout_user:264 - 用户退出登录。
+2025-07-15 10:08:40 | INFO     | gui.login_page:_start_login_process:221 - 登录线程已启动。
+2025-07-15 10:08:40 | INFO     | gui.login_page:run:42 - 正在启动浏览器...
+2025-07-15 10:08:46 | INFO     | gui.login_page:run:58 - 已打开登录入口页面 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html?VenueNo=02
+2025-07-15 10:08:46 | INFO     | gui.login_page:run:64 - 等待跳转到验证页面 (B页面)...
+2025-07-15 10:09:11 | INFO     | gui.login_page:run:70 - 已跳转到验证页面: https://ids.xidian.edu.cn/authserver/login?service=https%3A%2F%2Fxxcapp.xidian.edu.cn%2Fa_xidian%2Fapi%2Fcas-login%2Findex%3Fredirect%3Dhttps%253A%252F%252Fxxcapp.xidian.edu.cn%252F%252Fuc%252Fapi%252Foauth%252Findex%253Fappid%253D200240927110038794%2526redirect%253Dhttp%25253a%25252f%25252fgyytygyy.xidian.edu.cn%25252fUser%25252fQYLogin%2526state%253DSTATE%26from%3Dwap
+2025-07-15 10:09:11 | INFO     | gui.login_page:run:83 - 请在弹出的浏览器窗口中完成登录操作...
+2025-07-15 10:09:36 | INFO     | gui.login_page:run:92 - 已从验证页面返回主业务域 (A页面): https://gyytygyy.xidian.edu.cn/Views/User/Main.html
+2025-07-15 10:09:36 | INFO     | gui.login_page:run:97 - 用户可能已登录并返回主业务域，尝试获取凭证...
+2025-07-15 10:09:38 | INFO     | gui.login_page:_get_credentials_from_driver:136 - 获取到 8 条Cookie。
+2025-07-15 10:09:38 | INFO     | gui.login_page:_get_credentials_from_driver:144 - 获取到 Local Storage 数据。
+2025-07-15 10:09:38 | INFO     | gui.login_page:_get_credentials_from_driver:154 - 获取到 Session Storage 数据。
+2025-07-15 10:09:38 | INFO     | gui.login_page:_on_login_success:227 - 登录成功信号接收。
+2025-07-15 10:09:39 | INFO     | gui.main_windows:_on_login_successful_from_page:279 - 从登录页面接收到登录成功信号。
+2025-07-15 10:09:39 | INFO     | gui.main_windows:_fetch_and_display_user_info:333 - 尝试获取用户信息...
+2025-07-15 10:09:40 | INFO     | gui.main_windows:_fetch_and_display_user_info:344 - 获取到用户名: 侯岚翔
+2025-07-15 10:09:40 | INFO     | gui.main_windows:_load_and_display_avatar:364 - 正在加载头像: https://wework.qpic.cn/wwpic3az/140326_JB7hsLjfQluboix_1722488622/0
+2025-07-15 10:09:40 | INFO     | gui.main_windows:_on_avatar_download_finished:398 - 头像加载成功。
+2025-07-15 10:09:40 | INFO     | gui.login_page:run:119 - 浏览器已关闭。
+2025-07-15 10:09:41 | INFO     | gui.main_windows:_on_sport_selected:293 - 点击了 乒乓球 图标。
+2025-07-15 10:09:42 | INFO     | gui.main_windows:_on_sport_selected:293 - 点击了 篮球 图标。
+2025-07-15 10:09:42 | INFO     | gui.main_windows:_on_sport_selected:293 - 点击了 健身 图标。
+2025-07-15 10:09:43 | INFO     | gui.main_windows:_on_sport_selected:293 - 点击了 羽毛球 图标。
+2025-07-15 10:09:46 | INFO     | gui.badminton_booking_page:_on_date_changed:167 - 预约日期选择改变为: 2025-07-15
+2025-07-15 10:09:46 | INFO     | gui.badminton_booking_page:_fetch_venue_state:211 - 正在获取当前选择日期的场地信息...
+2025-07-15 10:09:46 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=0, TimePeriod=0
+2025-07-15 10:09:49 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 10:09:52 | INFO     | gui.badminton_booking_page:_on_time_period_changed:173 - 时间段选择改变为: 下午 (12:00-18:00) (值: 1)
+2025-07-15 10:09:52 | INFO     | gui.badminton_booking_page:_fetch_venue_state:211 - 正在获取当前选择日期的场地信息...
+2025-07-15 10:09:52 | INFO     | gui.badminton_booking_page:run:36 - 正在获取场地信息：dateadd=0, TimePeriod=1
+2025-07-15 10:09:53 | INFO     | gui.badminton_booking_page:_on_venue_state_fetched:235 - 场地信息获取成功。
+2025-07-15 10:09:53 | WARNING  | gui.badminton_booking_page:_on_venue_state_fetched:248 - 当前获取的场地信息中，没有找到可预订的场次。
+2025-07-15 10:09:54 | INFO     | gui.badminton_booking_page:_on_field_button_toggle_selection:395 - 已选中场地: 羽毛球场1号 14:00-15:00
+2025-07-15 10:09:54 | INFO     | gui.badminton_booking_page:_on_field_button_toggle_selection:395 - 已选中场地: 羽毛球场1号 13:00-14:00
+2025-07-15 10:09:55 | WARNING  | core.schedule_task:add_booking_task:67 - SchedulerManager: 任务执行时间 2025-07-15 08:00:00 已过期或为当前时间，将尝试立即执行。
+2025-07-15 10:09:55 | INFO     | core.schedule_task:_execute_booking_job:97 - SchedulerManager: >>> _execute_booking_job 函数开始执行，当前时间: 2025-07-15 10:09:55 <<<
+2025-07-15 10:09:55 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 1 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:09:55 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '14:00', 'Count': '2', 'DateBeginTime': '2025-07-15 14:00:00', 'DateEndTime': '2025-07-15 15:00:00', 'EndTime': '15:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '任**已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}, {'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:09:56 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 10:09:56 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 当前时间段有场地不可用，请刷新页面后重新选择. Retrying...
+2025-07-15 10:09:57 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 2 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:09:57 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '14:00', 'Count': '2', 'DateBeginTime': '2025-07-15 14:00:00', 'DateEndTime': '2025-07-15 15:00:00', 'EndTime': '15:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '任**已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}, {'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:09:57 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 10:09:57 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 10:09:58 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 3 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:09:58 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '14:00', 'Count': '2', 'DateBeginTime': '2025-07-15 14:00:00', 'DateEndTime': '2025-07-15 15:00:00', 'EndTime': '15:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '任**已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}, {'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:09:58 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 10:09:58 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 10:09:59 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 4 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:09:59 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '14:00', 'Count': '2', 'DateBeginTime': '2025-07-15 14:00:00', 'DateEndTime': '2025-07-15 15:00:00', 'EndTime': '15:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '任**已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}, {'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:10:00 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 10:10:00 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 10:10:01 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 5 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:10:01 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '14:00', 'Count': '2', 'DateBeginTime': '2025-07-15 14:00:00', 'DateEndTime': '2025-07-15 15:00:00', 'EndTime': '15:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '任**已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}, {'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:10:02 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 10:10:02 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 当前时间段有场地不可用，请刷新页面后重新选择. Retrying...
+2025-07-15 10:10:03 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 6 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:10:03 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '14:00', 'Count': '2', 'DateBeginTime': '2025-07-15 14:00:00', 'DateEndTime': '2025-07-15 15:00:00', 'EndTime': '15:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '任**已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}, {'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:10:03 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 10:10:03 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 10:10:04 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 7 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:10:04 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '14:00', 'Count': '2', 'DateBeginTime': '2025-07-15 14:00:00', 'DateEndTime': '2025-07-15 15:00:00', 'EndTime': '15:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '任**已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}, {'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:10:04 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 10:10:04 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 10:10:05 | WARNING  | core.schedule_task:_execute_booking_job:171 - SchedulerManager: No email address provided and booking failed after all attempts.
+2025-07-15 10:11:16 | INFO     | gui.main_windows:_on_sport_selected:293 - 点击了 乒乓球 图标。
+2025-07-15 10:11:16 | INFO     | gui.main_windows:_on_sport_selected:293 - 点击了 篮球 图标。
+2025-07-15 10:11:17 | INFO     | gui.main_windows:_on_sport_selected:293 - 点击了 健身 图标。
+2025-07-15 10:11:17 | INFO     | gui.main_windows:_on_sport_selected:293 - 点击了 羽毛球 图标。
+2025-07-15 10:18:33 | INFO     | gui.badminton_booking_page:_on_field_button_toggle_selection:387 - 取消选中场地: 羽毛球场1号 14:00-15:00
+2025-07-15 10:18:35 | WARNING  | core.schedule_task:add_booking_task:67 - SchedulerManager: 任务执行时间 2025-07-15 08:00:00 已过期或为当前时间，将尝试立即执行。
+2025-07-15 10:18:35 | INFO     | core.schedule_task:_execute_booking_job:97 - SchedulerManager: >>> _execute_booking_job 函数开始执行，当前时间: 2025-07-15 10:18:35 <<<
+2025-07-15 10:18:35 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 1 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:18:35 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:18:37 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 10:18:37 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 当前时间段有场地不可用，请刷新页面后重新选择. Retrying...
+2025-07-15 10:18:38 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 2 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:18:38 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:18:38 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 10:18:38 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 10:18:39 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 3 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:18:39 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:18:39 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 10:18:39 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 10:18:40 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 4 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:18:40 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:18:41 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 10:18:41 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 10:18:42 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 5 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:18:42 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:18:43 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'IsCardPay': None, 'MemberNo': None, 'Discount': None, 'ConType': None, 'type': 3, 'errorcode': 0, 'message': '当前时间段有场地不可用，请刷新页面后重新选择', 'resultdata': None}
+2025-07-15 10:18:43 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 当前时间段有场地不可用，请刷新页面后重新选择. Retrying...
+2025-07-15 10:18:44 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 6 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:18:44 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:18:44 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 10:18:44 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 10:18:45 | INFO     | core.schedule_task:_execute_booking_job:119 - SchedulerManager: Attempt 7 to execute booking task for target date: 2025-07-15.
+2025-07-15 10:18:45 | INFO     | core.schedule_task:_execute_booking_job:123 - SchedulerManager: Calling OrderField API, params: checkdata=[{'BeginTime': '13:00', 'Count': '2', 'DateBeginTime': '2025-07-15 13:00:00', 'DateEndTime': '2025-07-15 14:00:00', 'EndTime': '14:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '1', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '高*已预订', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}], dateadd=0, VenueNo=02
+2025-07-15 10:18:45 | INFO     | core.schedule_task:_execute_booking_job:126 - SchedulerManager: OrderField API Response: {'type': 3, 'errorcode': 0, 'message': '对不起，您的下单速度过快，请稍后再试。', 'resultdata': None}
+2025-07-15 10:18:45 | WARNING  | core.schedule_task:_execute_booking_job:137 - SchedulerManager: Booking failed (conflict/too slow): 对不起，您的下单速度过快，请稍后再试。. Retrying...
+2025-07-15 10:18:45 | WARNING  | core.schedule_task:_execute_booking_job:163 - SchedulerManager: Booking failed after all attempts or definitive error. Sending final failure email to se_hyxiong@163.com.
+2025-07-15 10:18:45 | WARNING  | config.app_config:get:49 - ConfigManager: 环境变量 'EMAIL_SMTP_SERVER' 未设置，将使用默认值: None
+2025-07-15 10:18:45 | WARNING  | config.app_config:get:49 - ConfigManager: 环境变量 'EMAIL_SMTP_PORT' 未设置，将使用默认值: 587
+2025-07-15 10:18:45 | WARNING  | config.app_config:get:49 - ConfigManager: 环境变量 'EMAIL_USE_TLS' 未设置，将使用默认值: True
+2025-07-15 10:18:45 | WARNING  | config.app_config:get:49 - ConfigManager: 环境变量 'EMAIL_SENDER_EMAIL' 未设置，将使用默认值: None
+2025-07-15 10:18:45 | WARNING  | config.app_config:get:49 - ConfigManager: 环境变量 'EMAIL_SENDER_PASSWORD' 未设置，将使用默认值: None
+2025-07-15 10:18:45 | ERROR    | tools.email_sender:send_email:38 - 邮件发送配置不完整，请检查 .env 文件中的邮件配置项 (EMAIL_SMTP_SERVER, EMAIL_SMTP_PORT, EMAIL_SENDER_EMAIL, EMAIL_SENDER_PASSWORD)。
+2025-07-15 10:22:27 | INFO     | gui.main_windows:closeEvent:210 - MainWindow: 应用程序即将关闭，正在关闭定时任务调度器...
+2025-07-15 10:22:27 | INFO     | core.schedule_task:shutdown:51 - SchedulerManager: BackgroundScheduler 已关闭。
+2025-07-15 10:22:27 | INFO     | gui.main_windows:closeEvent:212 - MainWindow: 定时任务调度器已关闭。

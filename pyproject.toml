@@ -1,0 +1,21 @@
+[project]
+name = "xidiangymappointmenttool"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests>=2.32.4",
+    "certifi>=2025.1.31",
+    "charset-normalizer>=3.4.1",
+    "idna>=3.10",
+    "qrcode>=8.1",
+    "urllib3>=2.3.0",
+    "PySide6>=6.9.0",
+    "pillow>=11.2.1",
+    "loguru>=0.7.3",
+    "pyinstaller>=6.14.0",
+    "selenium>=4.34.2",
+    "apscheduler>=3.11.0",
+    "dotenv>=0.9.9",
+]
