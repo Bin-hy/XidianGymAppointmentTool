@@ -11,3 +11,4 @@ wheels/
 ./API/User/GetUserInfo.json
 ./config/credentials.json
 .env
+logs

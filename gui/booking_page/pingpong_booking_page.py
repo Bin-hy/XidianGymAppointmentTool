@@ -9,3 +9,4 @@ class PingpongBookingPage(QWidget):
         self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.label.setStyleSheet("font-size: 20px; color: #336699; padding: 50px;")
         self.layout.addWidget(self.label)
+
