@@ -9,5 +9,6 @@ wheels/
 # Virtual environments
 .venv
 ./API/User/GetUserInfo.json
+./config/credentials.json
 .env
 logs
