@@ -1,12 +1,16 @@
 import sys
-from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QStackedWidget, \
+import os
+import datetime
+from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QStackedWidget, \
     QMainWindow  # 移除了 QTabWidget
-from PySide6.QtCore import Qt
+from PySide6.QtCore import Qt, QUrl, QSize
+from PySide6.QtGui import QPixmap, QPainter, QBrush, QColor, QPainterPath, QIcon
 
 from loguru import logger
 
 # 导入配置和凭证管理器
 from config.credentials_config import credentials_manager
+from config.app_config import config_manager
 # 导入定时任务管理器
 from core.schedule_task import scheduler_manager
 
@@ -114,7 +118,8 @@ class MainWindow(QMainWindow):  # 使用 QMainWindow 以便更好地应用样式
         self.stacked_widget.addWidget(self.fitness_page)
 
         # 根据登录状态设置初始显示的页面
-        self._update_ui_based_on_login_status()
+        # 这一步将由 _update_ui_based_on_login_status 处理，无需在此处重复调用
+        # self._update_ui_based_on_login_status()
 
     def _handle_login_logout(self):
         """
@@ -155,6 +160,10 @@ class MainWindow(QMainWindow):  # 使用 QMainWindow 以便更好地应用样式
         # 通过 UserStatusWidget 获取并显示用户信息
         self.user_status_widget._获取并显示用户信息() # 修正：访问 UserStatusWidget 中的中文方法名 '_获取并显示用户信息'
 
+        # 登录成功后，主动加载羽毛球预约页面的数据
+        self.badminton_page.load_current_venue_state() # 新增：触发羽毛球页面加载数据
+        # 如果有其他预约页面也需要登录后加载数据，可以在这里添加类似调用
+
     def _on_sport_selected(self, sport_name: str):
         """
         处理运动图标点击事件，切换到对应的子界面。
@@ -186,6 +195,8 @@ class MainWindow(QMainWindow):  # 使用 QMainWindow 以便更好地应用样式
         if is_logged_in:
             self.stacked_widget.setCurrentWidget(self.default_home_page)
             self.status_label.setText("已加载上次登录状态。")
+            # 如果已登录，也触发羽毛球预约页面的数据加载（确保刷新）
+            self.badminton_page.load_current_venue_state()
         else:
             self.stacked_widget.setCurrentWidget(self.login_page)  # 未登录时默认显示登录页
             self.status_label.setText("点击 '登录' 按钮开始。")

@@ -42,14 +42,24 @@ def send_email(receiver_email: str, subject: str, content: str) -> bool:
     try:
         # 创建邮件内容
         message = MIMEText(content, 'plain', 'utf-8')
-        message['From'] = Header(f"场馆预约工具 <{sender_email}>", 'utf-8')
+        message['From'] = Header(f"体育馆预约结果", 'utf-8')
         message['To'] = Header(f"用户 <{receiver_email}>", 'utf-8')
         message['Subject'] = Header(subject, 'utf-8')
 
-        # 连接到SMTP服务器
-        with smtplib.SMTP(smtp_server, smtp_port) as server:
+        # 根据端口选择不同的 SMTP 类
+        if smtp_port == 465 or smtp_port == 994:  # 465 和 994 是常见的隐式 SSL 端口
+            logger.info(f"正在尝试使用 SMTP_SSL 连接到 {smtp_server}:{smtp_port}...")
+            server = smtplib.SMTP_SSL(smtp_server, smtp_port)
+            # 在使用 SMTP_SSL 时，不需要手动调用 starttls()，因为它在连接建立时就处理了 SSL/TLS
+        else:  # 比如 25 或 587 端口，可能需要 starttls
+            logger.info(f"正在尝试使用 SMTP 连接到 {smtp_server}:{smtp_port}...")
+            server = smtplib.SMTP(smtp_server, smtp_port)
             if use_tls:
+                logger.info("开启 TLS 加密 (starttls)...")
                 server.starttls()  # 开启TLS加密
+
+        # 连接并发送
+        with server:
             server.login(sender_email, sender_password)  # 登录邮箱
             server.sendmail(sender_email, receiver_email, message.as_string())  # 发送邮件
 
@@ -74,7 +84,7 @@ def send_email(receiver_email: str, subject: str, content: str) -> bool:
 # 示例用法 (仅供测试，实际应用中请勿直接调用)
 if __name__ == '__main__':
 
-    test_receiver = "test_receiver@example.com"  # 替换为您的测试收件人邮箱
+    test_receiver = "se_hyxiong@163.com"  # 替换为您的测试收件人邮箱
     test_subject = "场馆预约提醒测试"
     test_content = "这是一封来自场馆预约工具的测试邮件。如果收到，则邮件功能正常。"
 

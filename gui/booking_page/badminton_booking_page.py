@@ -127,9 +127,20 @@ class BadmintonBookingPage(QWidget):
 
         self.get_venue_thread = None
 
-        # 初始加载场地信息 (获取昨天的信息作为参考)
-        self._fetch_initial_reference_venue_state()
+        # 移除初始加载场地信息的调用，改为在登录成功后手动触发
+        # self._fetch_initial_reference_venue_state()
         self._update_submit_button_state()  # 确保初始状态正确
+
+        # 初始显示一个提示信息
+        self._display_message("请先登录以查看和预约场地信息。", "info")
+
+
+    def load_current_venue_state(self):
+        """
+        在登录成功后调用此方法，加载当前日期和时间段的场地信息。
+        """
+        logger.info("BadmintonBookingPage: 登录成功，正在加载当前场地信息...")
+        self._fetch_venue_state() # 调用已有的获取场地状态方法
 
     def _on_date_changed(self, date: QDate):
         """预约日期选择框改变时触发，重新获取场地信息"""
@@ -148,27 +159,28 @@ class BadmintonBookingPage(QWidget):
         selected_date = self.date_edit.date()
         return current_date.daysTo(selected_date)
 
-    def _fetch_initial_reference_venue_state(self):
-        """
-        在初始化时获取昨天的场地信息作为参考。
-        """
-        logger.info("初始加载：正在获取昨天的场地信息作为参考...")
-        self._clear_fields_display()
-        self.submit_button.setEnabled(False)
-        self.selected_fields = []
-        self._clear_all_button_styles()
+    # 移除 _fetch_initial_reference_venue_state 方法，因为它不再需要
+    # def _fetch_initial_reference_venue_state(self):
+    #     """
+    #     在初始化时获取昨天的场地信息作为参考。
+    #     """
+    #     logger.info("初始加载：正在获取昨天的场地信息作为参考...")
+    #     self._clear_fields_display()
+    #     self.submit_button.setEnabled(False)
+    #     self.selected_fields = []
+    #     self._clear_all_button_styles()
 
-        initial_dateadd = -1  # -1 表示昨天
-        initial_time_period = 0  # 默认上午
+    #     initial_dateadd = -1  # -1 表示昨天
+    #     initial_time_period = 0  # 默认上午
 
-        if self.get_venue_thread and self.get_venue_thread.isRunning():
-            self.get_venue_thread.quit()
-            self.get_venue_thread.wait()
+    #     if self.get_venue_thread and self.get_venue_thread.isRunning():
+    #         self.get_venue_thread.quit()
+    #         self.get_venue_thread.wait()
 
-        self.get_venue_thread = GetVenueStateNewThread(initial_dateadd, initial_time_period)
-        self.get_venue_thread.data_fetched.connect(self._on_venue_state_fetched)
-        self.get_venue_thread.error_occurred.connect(self._on_venue_state_error)
-        self.get_venue_thread.start()
+    #     self.get_venue_thread = GetVenueStateNewThread(initial_dateadd, initial_time_period)
+    #     self.get_venue_thread.data_fetched.connect(self._on_venue_state_fetched)
+    #     self.get_venue_thread.error_occurred.connect(self._on_venue_state_error)
+    #     self.get_venue_thread.start()
 
     def _fetch_venue_state(self):
         """
