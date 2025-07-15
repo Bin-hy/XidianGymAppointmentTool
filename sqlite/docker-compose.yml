@@ -1,0 +1,10 @@
+
+version: '3.8'
+
+services:
+  sqlite:
+    build: .
+    volumes:
+    - ./data:/data
+    ports:
+    - "12346:12346"
