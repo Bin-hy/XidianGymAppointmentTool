@@ -68,9 +68,11 @@ def OrderField(checkdata: list, dateadd: int, VenueNo: str):
     """
     生成订单。
     :param checkdata: 包含场地信息的列表，例如 [{"FieldNo":"YMQ001", "FieldTypeNo":"021", "FieldName":"羽毛球1", "BeginTime":"14:00", "EndTime":"15:00", "Price":"0.00"}]
+    [{'BeginTime': '17:00', 'Count': '2', 'DateBeginTime': '2025-07-21 17:00:00', 'DateEndTime': '2025-07-21 18:00:00', 'EndTime': '18:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '0', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}]
     :param dateadd: 当前日期偏移量 0表示当天 1表示下一天
     :param VenueNo: 场馆编号，例如 "02"
     :return: API响应JSON数据
+    [{'FieldNo': 'GYMQ001', 'FieldTypeNo': '021', 'FieldName': '羽毛球场1号', 'BeginTime': '17:00', 'EndTime': '18:00', 'Price': '0.00'}], dateadd=1, VenueNo=02
     """
     checkdata_json_str = json.dumps(checkdata, ensure_ascii=False)
 

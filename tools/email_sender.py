@@ -42,8 +42,8 @@ def send_email(receiver_email: str, subject: str, content: str) -> bool:
     try:
         # 创建邮件内容
         message = MIMEText(content, 'plain', 'utf-8')
-        message['From'] = Header(f"体育馆预约结果", 'utf-8')
-        message['To'] = Header(f"用户 <{receiver_email}>", 'utf-8')
+        message['From'] = Header(f"广研院体育馆预约提醒 <{sender_email}>", 'utf-8')  # 修改邮件标题
+        message['To'] = Header(receiver_email)
         message['Subject'] = Header(subject, 'utf-8')
 
         # 根据端口选择不同的 SMTP 类
@@ -85,7 +85,7 @@ def send_email(receiver_email: str, subject: str, content: str) -> bool:
 if __name__ == '__main__':
 
     test_receiver = "se_hyxiong@163.com"  # 替换为您的测试收件人邮箱
-    test_subject = "场馆预约提醒测试"
+    test_subject = "西电广研院体育馆预约提醒"
     test_content = "这是一封来自场馆预约工具的测试邮件。如果收到，则邮件功能正常。"
 
     logger.info("正在尝试发送测试邮件...")
@@ -93,4 +93,3 @@ if __name__ == '__main__':
         logger.info("测试邮件发送成功。")
     else:
         logger.error("测试邮件发送失败。")
-
