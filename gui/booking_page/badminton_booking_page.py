@@ -393,12 +393,15 @@ class BadmintonBookingPage(QWidget):
         script_date_qdate = self.script_date_edit.date()
         script_time_qtime = self.script_time_edit.time()
         email_address = self.email_input.text().strip()
+        booking_date_qdate = self.date_edit.date()
 
+        booking_date = datetime.date(booking_date_qdate.year(), booking_date_qdate.month(), booking_date_qdate.day())
         script_date = datetime.date(script_date_qdate.year(), script_date_qdate.month(), script_date_qdate.day())
         script_time = datetime.time(script_time_qtime.hour(), script_time_qtime.minute(), script_time_qtime.second())
 
         try:
-            scheduler_manager.add_booking_task(self.selected_fields, script_date, script_time,
+            check_data = self._handle_selected_fields(self.selected_fields)
+            scheduler_manager.add_booking_task(check_data, booking_date, script_date, script_time,
                                                email_address=email_address)
             # 任务添加成功后，立即启用UI，因为APScheduler是后台运行的
             self._set_ui_enabled(True)
@@ -469,3 +472,36 @@ class BadmintonBookingPage(QWidget):
             self.submit_button.setEnabled(False)
         else:  # 如果是启用UI，则根据当前选中状态更新提交按钮
             self._update_submit_button_state()
+
+    def _handle_selected_fields(self, selected_fields_data: list) -> list:
+        """
+        将A形式的数据列表转换为B形式的数据列表。
+
+        A形式示例:
+        [{'BeginTime': '17:00', 'Count': '2', 'DateBeginTime': '2025-07-20 17:00:00', 'DateEndTime': '2025-07-20 18:00:00', 'EndTime': '18:00', 'FieldName': '羽毛球场1号', 'FieldNo': 'GYMQ001', 'FieldState': '0', 'FieldTypeNo': '021', 'FinalPrice': '0.00', 'IsHalfHour': '0', 'MembeName': '已过期', 'ShowWidth': '100', 'TimePeriod': '1', 'TimeStatus': '1'}]
+
+        B形式示例:
+        [{"FieldNo":"YMQ001", "FieldTypeNo":"021", "FieldName":"羽毛球1", "BeginTime":"14:00", "EndTime":"15:00", "Price":"0.00"}]
+        """
+        handle_request_data = []
+        for value in selected_fields_data:
+            # 提取并转换所需字段
+            field_no = value.get('FieldNo', '')
+            field_type_no = value.get('FieldTypeNo', '')
+            field_name = value.get('FieldName', '')
+            begin_time = value.get('BeginTime', '')
+            end_time = value.get('EndTime', '')
+            price = value.get('FinalPrice', '0.00')  # 假设FinalPrice对应Price，如果没有则默认为'0.00'
+
+            # 创建B形式的字典
+            converted_item = {
+                "FieldNo": field_no,
+                "FieldTypeNo": field_type_no,
+                "FieldName": field_name,
+                "BeginTime": begin_time,
+                "EndTime": end_time,
+                "Price": price
+            }
+            handle_request_data.append(converted_item)
+
+        return handle_request_data
