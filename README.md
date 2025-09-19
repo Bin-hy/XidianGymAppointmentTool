@@ -38,8 +38,7 @@ windows:
 ## 安装依赖
 
 ```powershell
-uv sync
-```
+uv syncW
 ## 创建.env.local
 必须在根目录下创建一个 `.env.local` 文件！！！！！！！！！！！！！
 
