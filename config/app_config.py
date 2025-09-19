@@ -30,7 +30,7 @@ class ConfigManager:
         """
         if self._project_root_dir is None or self._project_root_dir != path:
             self._project_root_dir = path
-            dotenv_path = os.path.join(path, '.env')  # .env 文件通常位于项目根目录
+            dotenv_path = os.path.join(path, '.env.local')  # .env 文件通常位于项目根目录
 
             if os.path.exists(dotenv_path):
                 load_dotenv(dotenv_path)  # 从 .env 文件加载环境变量

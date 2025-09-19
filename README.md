@@ -40,6 +40,12 @@ windows:
 ```powershell
 uv sync
 ```
+## 创建.env.local
+必须在根目录下创建一个 `.env.local` 文件！！！！！！！！！！！！！
+
+copy `.env` 的配置文件
+如果无需邮箱提醒无需修改，如果需要请填写你的 `EMAIL_SENDER_EMAIL`和 `EMAIL_SENDER_PASSWORD` 即可
+
 
 ## 启动项目！！
 
