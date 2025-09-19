@@ -1,0 +1,9 @@
+FROM alpine:latest
+
+RUN apk --no-cache add socat sqlite
+
+COPY setup_dbs.sh /usr/local/bin/setup_dbs.sh
+
+RUN chmod +x /usr/local/bin/setup_dbs.sh
+
+CMD ["sh","/usr/local/bin/setup_dbs.sh"]
