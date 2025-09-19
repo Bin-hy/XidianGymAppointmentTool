@@ -41,27 +41,27 @@ def CheckUserStatus():
                {
                })
 
-# def OrderField():
-#     checkdata = [
-#         {
-#             "FieldNo":"YMQ001",
-#             "FieldTypeNo":"021",
-#             "FieldName":"羽毛球1",
-#             "BeginTime":"14:00",
-#             "EndTime":"15:00",
-#             "Price":"0.00"
-#         }
-#     ]
-#     checkdata_json_str = json.dumps(checkdata, ensure_ascii=False)  # ensure_ascii=False 确保中文不被转义
-#     dateadd = 2
-#     VenueNo = "02"
-#
-#     return get("https://gyytygyy.xidian.edu.cn/Field/OrderField",
-#                {
-#                    "checkdata": checkdata_json_str,
-#                    "dateadd": dateadd,
-#                    "VenueNo": VenueNo,
-#                })
+def OrderField2():
+    checkdata = [
+        {
+            "FieldNo":"YMQ001",
+            "FieldTypeNo":"021",
+            "FieldName":"羽毛球1",
+            "BeginTime":"14:00",
+            "EndTime":"15:00",
+            "Price":"0.00"
+        }
+    ]
+    checkdata_json_str = json.dumps(checkdata, ensure_ascii=False)  # ensure_ascii=False 确保中文不被转义
+    dateadd = 2
+    VenueNo = "02"
+
+    return get("https://gyytygyy.xidian.edu.cn/Field/OrderField",
+               {
+                   "checkdata": checkdata_json_str,
+                   "dateadd": dateadd,
+                   "VenueNo": VenueNo,
+               })
 
 
 def OrderField(checkdata: list, dateadd: int, VenueNo: str):
