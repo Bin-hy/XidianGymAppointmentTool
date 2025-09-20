@@ -12,8 +12,7 @@ from PySide6.QtGui import QColor, QPalette
 
 from loguru import logger
 
-# 导入 API 函数 (OrderField 仍在此处使用)
-from API.Badminiton.API import OrderField
+
 # 导入定时任务管理器
 from core.schedule_task import scheduler_manager
 # 从新的 threads 模块导入 GetVenueStateNewThread

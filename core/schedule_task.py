@@ -8,7 +8,7 @@ import json
 from loguru import logger
 
 # 导入API函数
-from API.Badminiton.API import OrderField
+from API.Badminiton.API import OrderField, OrderFieldFree
 # 导入邮件发送脚本
 from tools.email_sender import send_email
 
@@ -124,7 +124,8 @@ class SchedulerManager:
             try:
                 logger.info(
                     f"SchedulerManager: Calling OrderField API, params: checkdata={selected_fields_data}, dateadd={dateadd}, VenueNo={venue_no}")
-                response = OrderField(selected_fields_data, dateadd, venue_no)
+                # response = OrderField(selected_fields_data, dateadd, venue_no)
+                response = OrderFieldFree(selected_fields_data, dateadd, venue_no)
                 logger.info(f"SchedulerManager: OrderField API Response: {response}")
 
                 message = response.get("message", "Unknown result")
