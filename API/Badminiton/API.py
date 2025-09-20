@@ -84,6 +84,16 @@ def OrderField(checkdata: list, dateadd: int, VenueNo: str):
                    "VenueNo": VenueNo,
                })
 
+def OrderFieldFree(checkdata: list, dateadd: int, VenueNo: str):
+    checkdata_json_str = json.dumps(checkdata, ensure_ascii=False)
+
+    # 确认这是一个GET请求，参数通过URL传递
+    return get("https://gyytygyy.xidian.edu.cn/Field/OrderFieldFree",
+               params={
+                   "checkdata": checkdata_json_str,
+                   "dateadd": dateadd,
+                   "VenueNo": VenueNo,
+               })
 def GetVenueStateNew(dateadd: int = 0, TimePeriod: int = 0):
     """
     获取具体场地信息。
